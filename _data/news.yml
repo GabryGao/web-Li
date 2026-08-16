@@ -27,28 +27,59 @@
   headline: "AgentAuditor has been accepted to NeurIPS 2025. Congratulations to Hanjun and Shenyu."
 
 - date: "2025.06"
-  headline: "AudioTrust has been accepted to ICLR\u201926! We hope this can serve as a solid foundation for academia and industry for safe audio-based LLM system development. [Github (https://github.com/JusperLee/AudioTrust)] (Media Coverage: [\u91cf\u5b50\u4f4d (https://mp.weixin.qq.com/s/gKifSw2iQs7VHLtjhGk-Tg)])"
+  headline: "AudioTrust has been accepted to ICLR’26! We hope this can serve as a solid foundation for academia and industry for safe audio-based LLM system development."
+  links:
+    - label: "GitHub"
+      url: "https://github.com/JusperLee/AudioTrust"
+    - label: "Media coverage"
+      url: "https://mp.weixin.qq.com/s/gKifSw2iQs7VHLtjhGk-Tg"
 
 - date: "2025.06"
   headline: "Neural Invisibility Cloak has been accepted to USENIX Security\u201925. Congratulations to Wenjun."
 
 - date: "2025.04"
-  headline: "Led/Contributed to 3 (Trustworthy) LLM Agent survey papers are now released: (1) TrustAgent: A survey on trustworthy LLM agents: Threats and countermeasures [Paper (https://arxiv.org/abs/2503.09648) (accepted to KDD\u201925)]; (2) Advances and challenges in foundation agents: From brain-inspired intelligence to evolutionary, collaborative, and safe systems [Paper (https://arxiv.org/abs/2504.01990) Github (https://github.com/FoundationAgents/awesome-foundation-agents)] [HuggingFace (https://huggingface.co/papers/2504.01990)] (Media Coverage, e.g., [SANER (https://conf.researchr.org/details/saner-2025/saner-2025-papers/58/Keynote-3-Advances-and-Challenges-in-Foundation-Agents-From-Brain-Inspired-Intellig), \u673a\u5668\u4e4b\u5fc3 (https://mp.weixin.qq.com/s/KLbiikJaYqhp9K1-D_pq2A)]); (3) A Comprehensive Survey in LLM (-Agent) Full Stack Safety: Data, Training, and Deployment."
+  headline: "Led/Contributed to 3 (Trustworthy) LLM Agent survey papers are now released: (1) TrustAgent: A survey on trustworthy LLM agents: Threats and countermeasures (accepted to KDD’25); (2) Advances and challenges in foundation agents: From brain-inspired intelligence to evolutionary, collaborative, and safe systems; (3) A Comprehensive Survey in LLM (-Agent) Full Stack Safety: Data, Training, and Deployment."
+  links:
+    - label: "TrustAgent paper"
+      url: "https://arxiv.org/abs/2503.09648"
+    - label: "Foundation Agents paper"
+      url: "https://arxiv.org/abs/2504.01990"
+    - label: "GitHub"
+      url: "https://github.com/FoundationAgents/awesome-foundation-agents"
+    - label: "Hugging Face"
+      url: "https://huggingface.co/papers/2504.01990"
+    - label: "SANER"
+      url: "https://conf.researchr.org/details/saner-2025/saner-2025-papers/58/Keynote-3-Advances-and-Challenges-in-Foundation-Agents-From-Brain-Inspired-Intellig"
+    - label: "Media coverage"
+      url: "https://mp.weixin.qq.com/s/KLbiikJaYqhp9K1-D_pq2A"
 
 - date: "2024.11"
   headline: "LightAntenna has been accepted to NDSS 2025."
 
 - date: "2024.08"
-  headline: "Raconteur has been accepted to NDSS 2025 [website (https://raconteur-ndss.github.io/)]."
+  headline: "Raconteur has been accepted to NDSS 2025."
+  links:
+    - label: "Website"
+      url: "https://raconteur-ndss.github.io/"
 
 - date: "2024.08"
   headline: "Legilimens has been accepted to CCS 2024."
 
 - date: "2024.05"
-  headline: "SafeGen has been accepted to CCS 2024! More information is on [code (https://github.com/LetterLiGo/SafeGen_CCS2024)][pretrained model (https://huggingface.co/LetterJohn/SafeGen-Pretrained-Weights)]."
+  headline: "SafeGen has been accepted to CCS 2024!"
+  links:
+    - label: "Code"
+      url: "https://github.com/LetterLiGo/SafeGen_CCS2024"
+    - label: "Pretrained model"
+      url: "https://huggingface.co/LetterJohn/SafeGen-Pretrained-Weights"
 
 - date: "2024.05"
-  headline: "SafeEar has been accepted to CCS 2024! More information is on [website (https://letterligo.netlify.app/SafeEar/)][code (https://github.com/LetterLiGo/SafeEar)]."
+  headline: "SafeEar has been accepted to CCS 2024!"
+  links:
+    - label: "Website"
+      url: "https://letterligo.netlify.app/SafeEar/"
+    - label: "Code"
+      url: "https://github.com/LetterLiGo/SafeEar"
 
 - date: "2023.08"
   headline: "VRifle has been accepted to NDSS 2024."

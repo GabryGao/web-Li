@@ -1,0 +1,33 @@
+source: "https://letterligo.netlify.app/"
+scholar: "https://scholar.google.com/citations?user=JC_UWyoAAAAJ&hl=en"
+eyebrow: "AI Security & Trustworthy AI"
+tagline: "Trustworthy AI, LLM/Agentic AI Security, AI for Security."
+affiliation: "Department of Data Science and Artificial Intelligence, The Hong Kong Polytechnic University"
+
+bio:
+  - "I am an Assistant Professor in the Department of Data Science and Artificial Intelligence (DSAI) at The Hong Kong Polytechnic University (PolyU)."
+  - "Previously, I was a Research Fellow in the College of Computing and Data Science at NTU, working with Prof. XiaoFeng Wang and Prof. Wei Dong. I completed my Ph.D. with honors at Zhejiang University, co-supervised by Prof. Wenyuan Xu, Prof. Xiaoyu Ji, and Prof. Chen Yan. I obtained my B.Eng. with honors from Zhejiang University."
+  - "My research focuses on AI security and privacy, especially the security, privacy, and safety of multimodal LLMs & agentic AI systems. I study how to secure interactions between agentic AI systems and the real world. My goal is to help AI agents become robust and responsible partners. Robust agents should be resilient to external attacks, and responsible agents should behave in a helpful, harmless, and honest manner."
+  - "My work has appeared in security and AI/ML venues: IEEE S&P, ACM CCS, USENIX Security, NDSS, NeurIPS, ICML, ICLR, KDD, CVPR, ACL, etc."
+
+research:
+  - id: "agentic-ai-security"
+    title: "Security and Privacy of Agentic AI Systems"
+    short_title: "Agentic AI Security"
+    description: "Building robust and responsible agentic AI systems and protecting their interactions with the physical and digital world."
+    icon: "shield-halved"
+  - id: "responsible-ai"
+    title: "Responsible AI in Social Contexts"
+    short_title: "Responsible AI"
+    description: "Improving the safety, security, and privacy of multi-agent and human-agent interactions, as well as addressing risks in multimodal AIGC (e.g., deepfake generation and detection)."
+    icon: "people-group"
+  - id: "trustworthy-ai-for-x"
+    title: "Trustworthy AI for X"
+    short_title: "Trustworthy AI for X"
+    description: "Enabling reliable AI deployment in healthcare, power grids, software engineering, IoT, and telecommunications systems."
+    icon: "flask"
+
+recruiting:
+  headline: "We are recruiting"
+  text: "PhDs for 27Fall, Postdocs, and research assistants/interns (remote/onsite). If you are seeking academic collaboration or are interested in joining my lab, please email me."
+  note: "Due to the volume of inquiries, my apology if you don’t receive my reply."
