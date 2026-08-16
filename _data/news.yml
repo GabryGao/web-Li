@@ -1,0 +1,72 @@
+# News from https://letterligo.netlify.app
+- date: "2026.07"
+  headline: "iFinder (multi-agent flaw discovery for core carrier networks) and Inception (multi-turn jailbreak against T2I systems) have been accepted to USENIX Security 2026."
+
+- date: "2026.06"
+  headline: "PoisonLoRA (plugin poisoning in the text-to-image ecosystem) has been accepted to CCS 2026."
+
+- date: "2026.04"
+  headline: "A-MemGuard and CentaurEval have been accepted to ICML 2026."
+
+- date: "2026.03"
+  headline: "GIFT has been accepted to IEEE S&P 2026."
+
+- date: "2026.03"
+  headline: "ELS (Energy Landscape Steering), AudioStealer, and MDTeamGPT have been accepted to ACL Main/Findings 2026."
+
+- date: "2026.01"
+  headline: "Refusal-Index and PISTOLE have been accepted to ICLR 2026."
+
+- date: "2025.11"
+  headline: "EmoRAG has been accepted to SIGKDD 2026. It\u2019s great working with Xinyun to investigate RAG robustness."
+
+- date: "2025.10"
+  headline: "WebCloak, EnchTable have been accepted to S&P 2026. Congratulations to Jialin and all collaborators."
+
+- date: "2025.09"
+  headline: "AgentAuditor has been accepted to NeurIPS 2025. Congratulations to Hanjun and Shenyu."
+
+- date: "2025.06"
+  headline: "AudioTrust has been accepted to ICLR\u201926! We hope this can serve as a solid foundation for academia and industry for safe audio-based LLM system development. [Github (https://github.com/JusperLee/AudioTrust)] (Media Coverage: [\u91cf\u5b50\u4f4d (https://mp.weixin.qq.com/s/gKifSw2iQs7VHLtjhGk-Tg)])"
+
+- date: "2025.06"
+  headline: "Neural Invisibility Cloak has been accepted to USENIX Security\u201925. Congratulations to Wenjun."
+
+- date: "2025.04"
+  headline: "Led/Contributed to 3 (Trustworthy) LLM Agent survey papers are now released: (1) TrustAgent: A survey on trustworthy LLM agents: Threats and countermeasures [Paper (https://arxiv.org/abs/2503.09648) (accepted to KDD\u201925)]; (2) Advances and challenges in foundation agents: From brain-inspired intelligence to evolutionary, collaborative, and safe systems [Paper (https://arxiv.org/abs/2504.01990) Github (https://github.com/FoundationAgents/awesome-foundation-agents)] [HuggingFace (https://huggingface.co/papers/2504.01990)] (Media Coverage, e.g., [SANER (https://conf.researchr.org/details/saner-2025/saner-2025-papers/58/Keynote-3-Advances-and-Challenges-in-Foundation-Agents-From-Brain-Inspired-Intellig), \u673a\u5668\u4e4b\u5fc3 (https://mp.weixin.qq.com/s/KLbiikJaYqhp9K1-D_pq2A)]); (3) A Comprehensive Survey in LLM (-Agent) Full Stack Safety: Data, Training, and Deployment."
+
+- date: "2024.11"
+  headline: "LightAntenna has been accepted to NDSS 2025."
+
+- date: "2024.08"
+  headline: "Raconteur has been accepted to NDSS 2025 [website (https://raconteur-ndss.github.io/)]."
+
+- date: "2024.08"
+  headline: "Legilimens has been accepted to CCS 2024."
+
+- date: "2024.05"
+  headline: "SafeGen has been accepted to CCS 2024! More information is on [code (https://github.com/LetterLiGo/SafeGen_CCS2024)][pretrained model (https://huggingface.co/LetterJohn/SafeGen-Pretrained-Weights)]."
+
+- date: "2024.05"
+  headline: "SafeEar has been accepted to CCS 2024! More information is on [website (https://letterligo.netlify.app/SafeEar/)][code (https://github.com/LetterLiGo/SafeEar)]."
+
+- date: "2023.08"
+  headline: "VRifle has been accepted to NDSS 2024."
+
+- date: "2023.08"
+  headline: "I attended the USENIX Security 2023 Symposium and presented our work NormDetect in person."
+
+- date: "2023.07"
+  headline: "SMA has been accepted to ACM MM 2023."
+
+- date: "2022.09"
+  headline: "Tuner and UltraBD were accepted to IoT-J 2023 and ICPADS 2022."
+
+- date: "2022.07"
+  headline: "NormDetect has been accepted to USENIX Security 2023."
+
+- date: "2021.07"
+  headline: "PROLE Score has been accepted to USENIX Security 2022."
+
+- date: "2020.12"
+  headline: "EarArray has been accepted to NDSS 2021."

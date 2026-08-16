@@ -1,0 +1,132 @@
+---
+title: "Home"
+layout: homelay
+sitemap: false
+permalink: /
+---
+
+<section class="lab-hero">
+  <div class="lab-hero-grid">
+    <div class="lab-hero-copy">
+      <p class="eyebrow">AI Safety &amp; Trustworthy AI</p>
+      <h1 class="home-hero">{{ site.name }}</h1>
+      <p class="home-hero-sub">{{ site.title }} · The Hong Kong Polytechnic University</p>
+      <p class="hero-lead">{{ site.lab_tagline }}</p>
+      <div class="chip-container" markdown="0">
+        <a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Agentic AI Security</a>
+        <a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">LLM Safety</a>
+        <a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Multimodal Trustworthiness</a>
+        <a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Responsible AI</a>
+      </div>
+      <div class="hero-actions" markdown="0">
+        <a href="#openings" class="btn-pill btn-primary-cta">Join Us</a>
+        <a href="{{ site.url }}{{ site.baseurl }}/publications" class="btn-pill btn-secondary-cta">Publications</a>
+        <a href="mailto:{{ site.email }}" class="btn-pill btn-secondary-cta">Email</a>
+      </div>
+    </div>
+    <div class="lab-hero-side" markdown="0">
+      {% include sidebar.html %}
+    </div>
+  </div>
+</section>
+
+<section class="home-section" id="about">
+  <div class="section-title-bar">
+    <h2>About</h2>
+  </div>
+  <div class="section-card about-card">
+    <p>I am an Assistant Professor in the Department of Data Science and Artificial Intelligence (DSAI) at The Hong Kong Polytechnic University (PolyU).</p>
+    <p>Previously, I was a Research Fellow in the College of Computing and Data Science at NTU, working with Prof. XiaoFeng Wang and Prof. Wei Dong. I completed my Ph.D. with honors at Zhejiang University, co-supervised by Prof. Wenyuan Xu, Prof. Xiaoyu Ji, and Prof. Chen Yan. I obtained my B.Eng. with honors from Zhejiang University.</p>
+    <p>My research focuses on <strong>AI security and privacy</strong>, especially the security, privacy, and safety of <strong>multimodal LLMs &amp; agentic AI systems</strong>. I study how to secure interactions between agentic AI systems and the real world. My goal is to help AI agents become robust and responsible partners. Robust agents should be resilient to external attacks, and responsible agents should behave in a helpful, harmless, and honest manner. My work has appeared in security and AI/ML venues: IEEE S&amp;P, ACM CCS, USENIX Security, NDSS, NeurIPS, ICML, ICLR, KDD, CVPR, ACL, etc.</p>
+  </div>
+</section>
+
+<section class="home-section alt-bg" id="research">
+  <div class="section-title-bar">
+    <h2>Research Directions</h2>
+  </div>
+  <p class="section-intro">My group is broadly interested in the following research directions:</p>
+  <div class="research-grid modern-research">
+    <div class="research-card">
+      <div class="research-body">
+        <h4 class="research-title"><i class="fa-solid fa-shield-halved"></i> Security and Privacy of Agentic AI Systems</h4>
+        <p class="research-desc">Building robust and responsible agentic AI systems and protecting their interactions with the physical and digital world.</p>
+      </div>
+    </div>
+    <div class="research-card">
+      <div class="research-body">
+        <h4 class="research-title"><i class="fa-solid fa-people-group"></i> Responsible AI in Social Contexts</h4>
+        <p class="research-desc">Improving the safety, security, and privacy of multi-agent and human-agent interactions, as well as addressing risks in multimodal AIGC (e.g., deepfake generation and detection).</p>
+      </div>
+    </div>
+    <div class="research-card">
+      <div class="research-body">
+        <h4 class="research-title"><i class="fa-solid fa-flask"></i> Trustworthy AI for X</h4>
+        <p class="research-desc">Enabling reliable AI deployment in healthcare, power grids, software engineering, IoT, and telecommunications systems.</p>
+      </div>
+    </div>
+  </div>
+  <p class="section-more"><a href="{{ site.url }}{{ site.baseurl }}/research">Explore research &rarr;</a></p>
+</section>
+
+<section class="home-section" id="news">
+  <div class="section-title-bar">
+    <h2>Recent News</h2>
+  </div>
+  <div class="section-card news-scroll">
+    <div class="news-timeline home-news">
+      {% for article in site.data.news limit:8 %}
+      <div class="news-item">
+        <div class="news-date">{{ article.date }}</div>
+        <div class="news-headline">{{ article.headline }}</div>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="section-more" style="margin-bottom:0;"><a href="{{ site.url }}{{ site.baseurl }}/news">See all news &rarr;</a></p>
+  </div>
+</section>
+
+<section class="home-section alt-bg" id="publications">
+  <div class="section-title-bar">
+    <h2>Selected Publications</h2>
+  </div>
+  <p class="section-intro">(*: Equal Contribution, ^: Corresponding Author)</p>
+  <div class="selected-pubs">
+    {% for pub in site.data.publications limit:10 %}
+    <article class="pub-card">
+      <h4 class="pub-title">
+        {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
+      </h4>
+      <p class="pub-meta"><span class="pub-venue">{{ pub.venue }}</span>{% if pub.year %} · {{ pub.year }}{% endif %}</p>
+      <p class="pub-authors">{{ pub.authors }}</p>
+      <div class="pub-actions">
+        {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener" class="btn-pill btn-doi">Paper</a>{% endif %}
+        {% if pub.website %}<a href="{{ pub.website }}" target="_blank" rel="noopener" class="btn-pill btn-website">Website</a>{% endif %}
+        {% if pub.code %}<a href="{{ pub.code }}" target="_blank" rel="noopener" class="btn-pill btn-git">Code</a>{% endif %}
+        {% if pub.dataset %}<a href="{{ pub.dataset }}" target="_blank" rel="noopener" class="btn-pill btn-website">Dataset</a>{% endif %}
+        {% if pub.weights %}<a href="{{ pub.weights }}" target="_blank" rel="noopener" class="btn-pill btn-website">Weights</a>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  <p class="section-more"><a href="{{ site.url }}{{ site.baseurl }}/publications">All publications &rarr;</a></p>
+</section>
+
+<section class="home-section" id="openings">
+  <div class="section-title-bar">
+    <h2>Join Us</h2>
+  </div>
+  <div class="recruit-banner">
+    <div class="recruit-text">
+      <strong>We are recruiting</strong>
+      <span>PhDs for 27Fall, Postdocs, and research assistants/interns (remote/onsite). If you are seeking academic collaboration or are interested in joining my lab, please email me.</span>
+    </div>
+    <div class="recruit-actions">
+      <a href="mailto:{{ site.email }}" class="recruit-btn">{{ site.email }}</a>
+      {% if site.links.email_alt and site.links.email_alt != "" %}
+      <a href="mailto:{{ site.links.email_alt }}" class="recruit-btn recruit-btn-alt">{{ site.links.email_alt }}</a>
+      {% endif %}
+    </div>
+  </div>
+  <p class="section-note">Due to the volume of inquiries, my apology if you don’t receive my reply.</p>
+</section>

@@ -1,0 +1,56 @@
+// =============================================================
+// Research chips + callouts
+// =============================================================
+
+.chip-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-4) 0 var(--space-6);
+}
+
+.chip {
+  display: inline-block;
+  padding: 0.35rem 0.9rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  border-radius: var(--radius-full);
+  background-color: var(--accent-soft);
+  color: var(--accent);
+  border: 1px solid transparent;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+  background-image: none !important;
+
+  &:hover {
+    border-color: var(--accent);
+    color: var(--accent-hover);
+    background-color: var(--accent-light);
+  }
+}
+
+.callout {
+  border-radius: var(--radius-lg);
+  padding: var(--space-5, 1.25rem) var(--space-6);
+  margin: var(--space-6) 0;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+}
+
+.callout-success {
+  background: var(--accent-soft);
+  border-color: rgba(124, 58, 237, 0.18);
+}
+
+.callout-title {
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.callout-icon {
+  color: var(--accent);
+  margin-right: 0.4rem;
+}

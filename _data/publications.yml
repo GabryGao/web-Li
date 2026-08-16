@@ -1,0 +1,220 @@
+# Selected publications migrated from https://letterligo.netlify.app
+# Do not invent entries.
+- title: Understanding Implicit Trust Errors in Core Carrier Networks through Multi-Agent Flaw Discovery and Analysis
+  authors: Ziyu Lin, Ziting Wang, Xinfeng Li, Wei Dong, XiaoFeng Wang
+  venue: USENIX Security 2026
+  year: 2026
+  url: "https://www.usenix.org/conference/usenixsecurity26/presentation/lin-ziyu"
+
+- title: Cybersecurity vulnerabilities in IoT devices
+  authors: Chen Yan, Xiaoyu Ji, Qinhong Jiang, Kai Wang, Xintong Wang, Wenjun Zhu, Shilin Xiao, Xinfeng Li, Wenyuan Xu
+  venue: Nature Reviews Electrical Engineering 2026
+  year: 2026
+  url: "https://www.nature.com/articles/s44287-026-00296-5"
+
+- title: "A-MemGuard: A Proactive Defense Framework for LLM-Based Agent Memory"
+  authors: Qianshan Wei, Tengchao Yang, Yaochen Wang, Xinfeng Li^, Lijun Li, Zhenfei Yin, Yi Zhan, Thorsten Holz, Zhiqiang Lin, XiaoFeng Wang
+  venue: ICML 2026
+  year: 2026
+  url: "https://arxiv.org/abs/2510.02373"
+
+- title: "CentaurEval: Benchmarking Human-in-the-Loop Value in Agentic Coding"
+  authors: Hanjun Luo, Chiming Ni, Jiaheng Wen, Zhimu Huang, Yiran Wang, Bingduo Liao, Sylvia Chung, Yingbin Jin, Xinfeng Li^, Wenyuan Xu, XiaoFeng Wang, Hanan Salam
+  venue: ICML 2026
+  year: 2026
+  url: "https://arxiv.org/abs/2512.04111"
+
+- title: "WebCloak: Characterizing and Mitigating the Threats of LLM-Driven Web Agents as Intelligent Scrapers"
+  authors: Xinfeng Li, Tianze Qiu, Yingbin Jin, Lixu Wang, Hanqing Guo, Xiaojun Jia, XiaoFeng Wang, Wei Dong
+  venue: "IEEE S&P 2026"
+  year: 2026
+  url: "https://letterligo.netlify.app/paper/SP26_WebAgent.pdf"
+  website: "https://web-cloak.github.io"
+
+- title: "The Person Behind the Sound: Demystifying Audio Private Attribute Profiling via Multimodal Large Language Models"
+  authors: Lixu Wang, Kaixiang Yao, Xinfeng Li^, Dong Yang, Haoyang Li, XiaoFeng Wang, Wei Dong^
+  venue: "IEEE S&P 2026"
+  year: 2026
+  url: "https://arxiv.org/abs/2507.10016"
+
+- title: "EnchTable: Unified Safety Alignment Transfer in Fine-tuned Large Language Models"
+  authors: Jialin Wu, Kecen Li, Zhicong Huang, Xinfeng Li, XiaoFeng Wang, Cheng Hong
+  venue: "IEEE S&P 2026"
+  year: 2026
+  url: "https://arxiv.org/abs/2511.09880"
+
+- title: Mitigating Over-Refusal in Aligned Large Language Models via Inference-Time Activation Energy
+  authors: Eric Jiang, Weixuan Ou, Run Liu, Shengyuan Pang, Guancheng Wan, Ranjie Duan, Wei Dong, Kai-Wei Chang, XiaoFeng Wang, Ying Nian Wu^, Xinfeng Li^
+  venue: ACL Main 2026
+  year: 2026
+  url: "https://arxiv.org/abs/2510.08646"
+
+- title: "EmoRAG: Evaluating RAG Robustness to Symbolic Perturbations"
+  authors: "Xinyun Zhou*, Xinfeng Li*, Yinan Peng, Ming Xu, Xuanwang Zhang, Miao Yu, Yidong Wang, Xiaojun Jia, Kun Wang, Qingsong Wen, XiaoFeng Wang, Wei Dong"
+  venue: KDD 2026
+  year: 2026
+  url: "https://letterligo.netlify.app/paper/KDD26_EmoRAG.pdf"
+
+- title: "AudioTrust: Benchmarking the Multifaceted Trustworthiness of Audio Large Language Models"
+  authors: K. Li, C. Shen, Y. Liu, J. Han, K. Zheng, X. Zou, Z. Wang, S. Zhang, X. Du, H. Luo, Y. Jin, X. Xing, Z. Ma, Y. Liu, Y. Zhang, J. Fang, K. Wang, Y. Yan, G. Deng, H. Li, Y. Li, X. Zhuang, T. Chen, Q. Wen, T. Zhang, Y. Liu, H. Hu, Z. Wu, X. Hu, E. Chng, W. Xu, X. Wang, W. Dong, Xinfeng Li^
+  venue: ICLR 2026
+  year: 2026
+  url: "https://arxiv.org/abs/2505.16211"
+
+- title: Can LLMs Refuse Questions They Do Not Know? Measuring Knowledge-Aware Refusal in Factual Tasks
+  authors: Wenbo Pan, Jie Xu, Qiguang Chen, Junhao Dong, Libo Qin, Xinfeng Li^, Haining Yu, Xiaohua Jia
+  venue: ICLR 2026
+  year: 2026
+  url: "https://arxiv.org/abs/2510.01782"
+
+- title: "Tug-of-War No More: Harmonizing Accuracy and Robustness in Vision-Language Models via Stability-Aware Task Vector Merging"
+  authors: Junhao Dong, Xinghua Qu, Cong Zhang, Sua Qi Rong, Nguyen Duc Thai, Wenbo Pan, Xinfeng Li^, Tongliang Liu, Piotr Koniusz, Yew-Soon Ong^
+  venue: ICLR 2026
+  year: 2026
+  url: "https://openreview.net/pdf?id=KOO1cDm2bt"
+
+- title: "Patronus: Safeguarding Text-to-Image Models against White-Box Adversaries"
+  authors: "Xinfeng Li*, Shengyuan Pang*, Jialin Wu, Jiangyi Deng, Huanlong Zhong, Yanjiao Chen, Jie Zhang, Wenyuan Xu"
+  venue: TIFS 2026
+  year: 2026
+  url: "https://arxiv.org/abs/2510.16581"
+
+- title: "Critical Information Only: A Content Privacy-Preserving Framework for Detecting Audio Deepfakes TDSC 2026 Xinfeng Li, Yifan Zheng, Chen Yan, Kai Li, Chang Zeng, Xiaoyu Ji, Wenyuan Xu."
+  authors: Xinfeng Li, Yifan Zheng, Chen Yan, Kai Li, Chang Zeng, Xiaoyu Ji, Wenyuan Xu
+  venue: TDSC 2026
+  year: 2026
+
+- title: "PromptGuard: Soft Prompt-Guided Unsafe Content Moderation for Text-to-Image Models TIFS 2026 Lingzhi Yuan, Xinfeng Li^, Chejian Xu, Guanhong Tao, Xiaojun Jia, Yihao Huang, Wei Dong, Yang Liu, Bo Li"
+  authors: Lingzhi Yuan, Xinfeng Li^, Chejian Xu, Guanhong Tao, Xiaojun Jia, Yihao Huang, Wei Dong, Yang Liu, Bo Li
+  venue: TIFS 2026
+  year: 2026
+
+- title: "RACONTEUR: A Knowledgeable, Insightful, and Portable LLM-Powered Shell Command Explainer"
+  authors: "Jiangyi Deng*, Xinfeng Li*, Yanjiao Chen, Yijie Bai, Haiqin Weng, Yan Liu, Tao Wei, Wenyuan Xu"
+  venue: NDSS 2025
+  year: 2025
+  url: "https://arxiv.org/abs/2409.02074"
+  website: "https://raconteur-ndss.github.io/"
+
+- title: "Neural Invisibility Cloak: Concealing Adversary in Images via Compromised AI-driven Image Signal Processing"
+  authors: Wenjun Zhu, Xiaoyu Ji, Xinfeng Li, Qihang Chen, Kun Wang, Xinyu Li, Ruoyan Xu, Wenyuan Xu
+  venue: USENIX Security 2025
+  year: 2025
+  url: "https://www.usenix.org/conference/usenixsecurity25/presentation/zhu-wenjun"
+
+- title: "LightAntenna: Characterizing the Limits of Fluorescent Lamp-Induced Electromagnetic Interference"
+  authors: Fengchen Yang, Wenze Cui, Xinfeng Li, Chen Yan, Xiaoyu Ji, Wenyuan Xu
+  venue: NDSS 2025
+  year: 2025
+  url: "https://www.ndss-symposium.org/ndss-paper/lightantenna-characterizing-the-limits-of-fluorescent-lamp-induced-electromagnetic-interference/"
+
+- title: "AgentAuditor: Human-level Safety and Security Evaluation for LLM Agents"
+  authors: Hanjun Luo, Shenyu Dai, Chiming Ni, Xinfeng Li^, Guibin Zhang, Kun Wang, Tongliang Liu, Hanan Salam
+  venue: NeurIPS 2025
+  year: 2025
+  url: "https://arxiv.org/abs/2506.00641"
+
+- title: "A Survey on Trustworthy LLM Agents: Threats and Countermeasures"
+  authors: Miao Yu, Fanci Meng, Xinyun Zhou, Shilong Wang, Junyuan Mao, Linsey Pang, Tianlong Chen, Kun Wang, Xinfeng Li^, Yongfeng Zhang, Bo An, Qingsong Wen
+  venue: KDD 2025
+  year: 2025
+  url: "https://arxiv.org/abs/2503.09648"
+
+- title: A Vision for Access Control in LLM-based Agent Systems
+  authors: Xinfeng Li, Dong Huang, Jie Li, Hongyi Cai, Zhenhong Zhou, Wei Dong, XiaoFeng Wang, Yang Liu
+  venue: arXiv
+  year: "2025"
+  url: "https://arxiv.org/abs/2510.11108"
+
+- title: "MedSentry: Understanding and Mitigating Safety Risks in Medical LLM Multi-Agent Systems"
+  authors: Kai Chen, Taihang Zhen, Hewei Wang, Kailai Liu, Xinfeng Li^, Jing Huo, Tianpei Yang, Jinfeng Xu, Wei Dong, Yang Gao
+  venue: arXiv
+  year: "2025"
+  url: "https://arxiv.org/abs/2505.20824"
+
+- title: "The Eye of Sherlock Holmes: Uncovering User Private Attribute Profiling via Vision-Language Model Agentic Framework"
+  authors: Feiran Liu, Yuzhe Zhang, Xinyi Huang, Yinan Peng, Xinfeng Li^, Lixu Wang, Yutong Shen, Ranjie Duan, Simeng Qin, Xiaojun Jia, Qingsong Wen, Wei Dong
+  venue: MM 2025
+  year: 2025
+  url: "https://arxiv.org/abs/2505.19139"
+
+- title: "SafeGen: Mitigating Sexually Explicit Content Generation in Text-to-Image Models"
+  authors: "Xinfeng Li*, Yuchen Yang*, Jiangyi Deng*, Chen Yan, Yanjiao Chen, Xiaoyu Ji, Wenyuan Xu"
+  venue: ACM CCS 2024
+  year: 2024
+  url: "https://arxiv.org/abs/2404.06666"
+  code: "https://github.com/LetterLiGo/SafeGen_CCS2024"
+  weights: "https://huggingface.co/LetterJohn/SafeGen-Pretrained-Weights"
+
+- title: "SafeEar: Content Privacy-Preserving Audio Deepfake Detection"
+  authors: "Xinfeng Li*, Kai Li*, Yifan Zheng, Chen Yan, Xiaoyu Ji, Wenyuan Xu"
+  venue: ACM CCS 2024
+  year: 2024
+  url: "https://letterligo.netlify.app/SafeEar/"
+  website: "https://letterligo.netlify.app/SafeEar/"
+  code: "https://github.com/LetterLiGo/SafeEar"
+  dataset: "https://zenodo.org/records/11229569"
+
+- title: "Legilimens: Practical and Unified Content Moderation for Large Language Model Services"
+  authors: Jialin Wu, Jiangyi Deng, Shengyuan Pang, Yanjiao Chen, Jiayang Xu, Xinfeng Li, Wenyuan Xu
+  venue: ACM CCS 2024
+  year: 2024
+  url: "https://arxiv.org/abs/2402.13454"
+  code: "https://github.com/lin000001/Legilimens"
+
+- title: "Inaudible Adversarial Perturbation: Manipulating the Recognition of User Speech in Real Time"
+  authors: Xinfeng Li, Chen Yan, Xuancun Lu, Zihan Zeng, Xiaoyu Ji, Wenyuan Xu
+  venue: NDSS 2024
+  year: 2024
+  url: "https://arxiv.org/abs/2308.01040"
+  code: "https://github.com/LetterLiGo/Adversarial_Audio_Attack-VRifle"
+
+- title: "Learning Normality is Enough: A Software-Based Mitigation Against Inaudible Voice Attacks"
+  authors: Xinfeng Li, Xiaoyu Ji, Chen Yan, Chaohao Li, Yichen Li, Zhenning Zhang, Wenyuan Xu
+  venue: USENIX Security 2023
+  year: 2023
+  url: "https://www.usenix.org/conference/usenixsecurity23/presentation/li-xinfeng"
+  website: "https://sites.google.com/view/normdetect"
+
+- title: Scoring Metrics of Assessing Voiceprint Distinctiveness based on Speech Content and Rate
+  authors: Ruiwen He, Yushi Cheng, Junning Ze, Xinfeng Li, Xiaoyu Ji, Wenyuan Xu
+  venue: IEEE TDSC 2024
+  year: 2024
+  url: "https://arxiv.org/abs/2206.01438"
+
+- title: Detecting Inaudible Voice Commands via Acoustic Attenuation by Multi-channel Microphones
+  authors: Xiaoyu Ji, Guoming Zhang, Xinfeng Li, Gang Qu, Xiuzhen Cheng, Wenyuan Xu
+  venue: IEEE TDSC 2024
+  year: 2024
+  url: "https://ieeexplore.ieee.org/abstract/document/9621376"
+
+- title: Enrollment-Stage Backdoor Attacks on Speaker Recognition Systems via Adversarial Ultrasound
+  authors: Xinfeng Li, Junning Ze, Chen Yan, Yushi Cheng, Xiaoyu Ji, Wenyuan Xu
+  venue: IEEE IoT-J 2023
+  year: 2023
+  url: "https://arxiv.org/abs/2306.16022"
+
+- title: Toward Pitch-Insensitive Speaker Verification via Soundfield
+  authors: Xinfeng Li, Zhicong Zheng, Chen Yan, Chaohao Li, Xiaoyu Ji, Wenyuan Xu
+  venue: IEEE IoT-J 2023
+  year: 2023
+  url: "https://www.researchgate.net/publication/371918855_Towards_Pitch-Insensitive_Speaker_Verification_via_Soundfield"
+
+- title: "The Silent Manipulator: A Practical and Inaudible Backdoor Attack against Speech Recognition Systems"
+  authors: Zhicong Zheng, Xinfeng Li, Chen Yan, Xiaoyu Ji, Wenyuan Xu
+  venue: ACM MM 2023
+  year: 2023
+  url: "https://dl.acm.org/doi/10.1145/3581783.3613843"
+
+- title: "\"OK, Siri\" or \"Hey, Google\": Evaluating Voiceprint Distinctiveness Via Content-based PROLE Score"
+  authors: Ruiwen He, Xiaoyu Ji, Xinfeng Li, Yushi Cheng, Wenyuan Xu
+  venue: USENIX Security 2022
+  year: 2022
+  url: "https://www.usenix.org/conference/usenixsecurity22/presentation/he-ruiwen"
+  website: "https://sites.google.com/view/voiceprint-sec"
+
+- title: "EarArray: Defending against DolphinAttack via Acoustic Attenuation"
+  authors: Guoming Zhang, Xiaoyu Ji, Xinfeng Li, Gang Qu, Wenyuan Xu
+  venue: NDSS 2021
+  year: 2021
+  url: "https://www.ndss-symposium.org/ndss-paper/eararray-defending-against-dolphinattack-via-acoustic-attenuation/"

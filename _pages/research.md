@@ -1,0 +1,39 @@
+---
+title: "Research"
+layout: gridlay
+sitemap: false
+permalink: /research/
+---
+
+## Research
+
+<p>My research focuses on <strong>AI security and privacy</strong>, especially the security, privacy, and safety of <strong>multimodal LLMs &amp; agentic AI systems</strong>. My group is broadly interested in the following research directions:</p>
+
+<div class="research-grid modern-research">
+
+<div class="research-card">
+<div class="research-body">
+<h4 class="research-title"><i class="fa-solid fa-shield-halved"></i> Security and Privacy of Agentic AI Systems</h4>
+<p class="research-desc">Building robust and responsible agentic AI systems and protecting their interactions with the physical and digital world.</p>
+</div>
+</div>
+
+<div class="research-card">
+<div class="research-body">
+<h4 class="research-title"><i class="fa-solid fa-people-group"></i> Responsible AI in Social Contexts</h4>
+<p class="research-desc">Improving the safety, security, and privacy of multi-agent and human-agent interactions, as well as addressing risks in multimodal AIGC (e.g., deepfake generation and detection).</p>
+</div>
+</div>
+
+<div class="research-card">
+<div class="research-body">
+<h4 class="research-title"><i class="fa-solid fa-flask"></i> Trustworthy AI for X</h4>
+<p class="research-desc">Enabling reliable AI deployment in healthcare, power grids, software engineering, IoT, and telecommunications systems.</p>
+</div>
+</div>
+
+</div>
+
+<div class="section-card" style="margin-top: var(--space-8);">
+<p>Representative themes in ongoing work include agent memory safety, multi-agent evaluation, multimodal deepfake and content moderation risks, and trustworthy deployment of foundation models. See the <a href="{{ site.url }}{{ site.baseurl }}/publications">publications</a> page for selected papers.</p>
+</div>

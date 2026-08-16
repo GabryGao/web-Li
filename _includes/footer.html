@@ -1,0 +1,39 @@
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <h5>{{ site.name }}</h5>
+      <p>
+        {{ site.title }}<br>
+        Department of Data Science and Artificial Intelligence<br>
+        The Hong Kong Polytechnic University
+      </p>
+      {% if site.lab_tagline %}<p class="footer-tagline">{{ site.lab_tagline }}</p>{% endif %}
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <p>
+        <a href="mailto:{{ site.email }}"><i class="fa-solid fa-envelope"></i> {{ site.email }}</a><br>
+        {% if site.links.email_alt and site.links.email_alt != "" %}
+        <a href="mailto:{{ site.links.email_alt }}"><i class="fa-solid fa-envelope"></i> {{ site.links.email_alt }}</a><br>
+        {% endif %}
+      </p>
+    </div>
+    <div>
+      <h5>Links</h5>
+      <p>
+        {% if site.links.google_scholar and site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}"><i class="ai ai-google-scholar"></i> Google Scholar</a><br>{% endif %}
+        {% if site.links.researchgate and site.links.researchgate != "" %}<a href="{{ site.links.researchgate }}"><i class="ai ai-researchgate"></i> ResearchGate</a><br>{% endif %}
+        <a href="{{ site.url }}{{ site.baseurl }}/publications"><i class="fa-solid fa-book"></i> Publications</a><br>
+        <a href="{{ site.url }}{{ site.baseurl }}/team"><i class="fa-solid fa-users"></i> Join the group</a>
+      </p>
+    </div>
+  </div>
+  <div class="footer-grid">
+    <div class="footer-copyright" style="grid-column: 1 / -1;">
+      &copy; {{ "now" | date: "%Y" }} {{ site.name | escape }}
+    </div>
+  </div>
+</footer>
+
+<script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/site.min.js" | relative_url }}"></script>
