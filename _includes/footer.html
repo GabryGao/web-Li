@@ -23,8 +23,8 @@
       <p>
         {% if site.links.google_scholar and site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}"><i class="ai ai-google-scholar"></i> Google Scholar</a><br>{% endif %}
         {% if site.links.researchgate and site.links.researchgate != "" %}<a href="{{ site.links.researchgate }}"><i class="ai ai-researchgate"></i> ResearchGate</a><br>{% endif %}
-        <a href="{{ site.url }}{{ site.baseurl }}/publications"><i class="fa-solid fa-book"></i> Publications</a><br>
-        <a href="{{ site.url }}{{ site.baseurl }}/team"><i class="fa-solid fa-users"></i> Join the group</a>
+        <a href="{{ '/publications/' | relative_url }}"><i class="fa-solid fa-book"></i> Publications</a><br>
+        <a href="{{ '/team/' | relative_url }}"><i class="fa-solid fa-users"></i> Join the group</a>
       </p>
     </div>
   </div>
@@ -35,5 +35,5 @@
   </div>
 </footer>
 
-<script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
-<script src="{{ "/assets/js/site.min.js" | relative_url }}"></script>
+<script src="{{ '/assets/javascript/bootstrap/bootstrap.bundle.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/site.min.js' | relative_url }}"></script>

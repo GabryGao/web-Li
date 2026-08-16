@@ -9,11 +9,11 @@
   <meta property="og:description" content="{{ site.description }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
-  {% if site.photo %}<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}">{% endif %}
+  {% if site.photo %}<meta property="og:image" content="{{ site.url }}{{ '/images/' | append: site.photo | relative_url }}">{% endif %}
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.name | escape }}{% endif %}">
   <meta name="twitter:description" content="{{ site.description }}">
-  {% if site.photo %}<meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}">{% endif %}
+  {% if site.photo %}<meta name="twitter:image" content="{{ site.url }}{{ '/images/' | append: site.photo | relative_url }}">{% endif %}
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,9 +28,9 @@
   <script>window.SITE_BASEURL = "{{ site.baseurl }}";</script>
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="icon" href="{{ site.url }}{{ site.baseurl }}/favicon.svg" type="image/svg+xml">
-  <link rel="alternate icon" href="{{ site.url }}{{ site.baseurl }}/favicon.ico">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.name | escape }}" href="{{ site.url }}{{ site.baseurl }}/feed.xml">
+  <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="alternate icon" href="{{ '/favicon.ico' | relative_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name | escape }}" href="{{ '/feed.xml' | relative_url }}">
 
   <!-- Accent color from config -->
   {% if site.accent_color %}

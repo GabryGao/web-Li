@@ -1,6 +1,6 @@
 <nav class="navbar sticky-top navbar-expand-md">
   <div class="container" style="max-width: var(--container-max);">
-    <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/">
+    <a class="navbar-brand" href="{{ '/' | relative_url }}">
       <span class="brand-mark">XL</span>
       <span class="brand-text">{{ site.name | escape }}</span>
     </a>
@@ -11,11 +11,12 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link{% if page.url == '/' %} active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/">Home</a>
+          <a class="nav-link{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
         </li>
         {% for nav in site.nav_pages %}
+        {% assign nav_path = nav.name | prepend: '/' | append: '/' %}
         <li class="nav-item">
-          <a class="nav-link{% if page.url contains nav.name %} active{% endif %}" href="{{ site.url }}{{ site.baseurl }}/{{ nav.name }}">{{ nav.title | default: nav.name | capitalize }}</a>
+          <a class="nav-link{% if page.url contains nav.name %} active{% endif %}" href="{{ nav_path | relative_url }}">{{ nav.title | default: nav.name | capitalize }}</a>
         </li>
         {% endfor %}
       </ul>

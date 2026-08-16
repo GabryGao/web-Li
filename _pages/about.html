@@ -10,7 +10,7 @@ permalink: /about/
 <div class="about-layout">
 <div class="section-card">
 <div class="pi-card">
-<img src="{{ site.url }}{{ site.baseurl }}/images/{{ site.photo }}" class="pi-photo" alt="{{ site.name }}" loading="lazy">
+<img src="{{ '/images/' | append: site.photo | relative_url }}" class="pi-photo" alt="{{ site.name }}" loading="lazy">
 <div>
 <h3 class="pi-name">{{ site.name }}</h3>
 <p style="font-style: italic; color: var(--text-secondary);">{{ site.title }}, The Hong Kong Polytechnic University</p>

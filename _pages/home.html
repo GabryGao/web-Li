@@ -12,19 +12,19 @@ permalink: /
       <h1 class="home-hero">{{ site.name }}</h1>
       <p class="home-hero-sub">{{ site.title }} · The Hong Kong Polytechnic University</p>
       <p class="hero-lead">{{ site.lab_tagline }}</p>
-      <div class="chip-container" markdown="0">
-        <a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Agentic AI Security</a>
-        <a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">LLM Safety</a>
-        <a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Multimodal Trustworthiness</a>
-        <a href="{{ site.url }}{{ site.baseurl }}/research" class="chip">Responsible AI</a>
+      <div class="chip-container">
+        <a href="{{ '/research/' | relative_url }}" class="chip">Agentic AI Security</a>
+        <a href="{{ '/research/' | relative_url }}" class="chip">LLM Safety</a>
+        <a href="{{ '/research/' | relative_url }}" class="chip">Multimodal Trustworthiness</a>
+        <a href="{{ '/research/' | relative_url }}" class="chip">Responsible AI</a>
       </div>
-      <div class="hero-actions" markdown="0">
+      <div class="hero-actions">
         <a href="#openings" class="btn-pill btn-primary-cta">Join Us</a>
-        <a href="{{ site.url }}{{ site.baseurl }}/publications" class="btn-pill btn-secondary-cta">Publications</a>
+        <a href="{{ '/publications/' | relative_url }}" class="btn-pill btn-secondary-cta">Publications</a>
         <a href="mailto:{{ site.email }}" class="btn-pill btn-secondary-cta">Email</a>
       </div>
     </div>
-    <div class="lab-hero-side" markdown="0">
+    <div class="lab-hero-side">
       {% include sidebar.html %}
     </div>
   </div>
@@ -66,7 +66,7 @@ permalink: /
       </div>
     </div>
   </div>
-  <p class="section-more"><a href="{{ site.url }}{{ site.baseurl }}/research">Explore research &rarr;</a></p>
+  <p class="section-more"><a href="{{ '/research/' | relative_url }}">Explore research &rarr;</a></p>
 </section>
 
 <section class="home-section" id="news">
@@ -82,7 +82,7 @@ permalink: /
       </div>
       {% endfor %}
     </div>
-    <p class="section-more" style="margin-bottom:0;"><a href="{{ site.url }}{{ site.baseurl }}/news">See all news &rarr;</a></p>
+    <p class="section-more" style="margin-bottom:0;"><a href="{{ '/news/' | relative_url }}">See all news &rarr;</a></p>
   </div>
 </section>
 
@@ -109,7 +109,7 @@ permalink: /
     </article>
     {% endfor %}
   </div>
-  <p class="section-more"><a href="{{ site.url }}{{ site.baseurl }}/publications">All publications &rarr;</a></p>
+  <p class="section-more"><a href="{{ '/publications/' | relative_url }}">All publications &rarr;</a></p>
 </section>
 
 <section class="home-section" id="openings">
