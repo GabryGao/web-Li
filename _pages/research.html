@@ -5,35 +5,28 @@ sitemap: false
 permalink: /research/
 ---
 
-## Research
+{% assign profile = site.data.profile %}
 
-<p>My research focuses on <strong>AI security and privacy</strong>, especially the security, privacy, and safety of <strong>multimodal LLMs &amp; agentic AI systems</strong>. My group is broadly interested in the following research directions:</p>
+<header class="page-hero">
+  <p class="section-kicker">Research</p>
+  <h1>Building robust and responsible AI systems</h1>
+  <p>{{ profile.bio[2] }}</p>
+</header>
 
-<div class="research-grid modern-research">
-
-<div class="research-card">
-<div class="research-body">
-<h4 class="research-title"><i class="fa-solid fa-shield-halved"></i> Security and Privacy of Agentic AI Systems</h4>
-<p class="research-desc">Building robust and responsible agentic AI systems and protecting their interactions with the physical and digital world.</p>
-</div>
-</div>
-
-<div class="research-card">
-<div class="research-body">
-<h4 class="research-title"><i class="fa-solid fa-people-group"></i> Responsible AI in Social Contexts</h4>
-<p class="research-desc">Improving the safety, security, and privacy of multi-agent and human-agent interactions, as well as addressing risks in multimodal AIGC (e.g., deepfake generation and detection).</p>
-</div>
-</div>
-
-<div class="research-card">
-<div class="research-body">
-<h4 class="research-title"><i class="fa-solid fa-flask"></i> Trustworthy AI for X</h4>
-<p class="research-desc">Enabling reliable AI deployment in healthcare, power grids, software engineering, IoT, and telecommunications systems.</p>
-</div>
+<div class="research-grid research-page-grid">
+  {% for direction in profile.research %}
+  <article class="research-card research-card-large" id="{{ direction.id }}">
+    <div class="research-index">0{{ forloop.index }}</div>
+    <div class="research-icon" aria-hidden="true"><i class="fa-solid fa-{{ direction.icon }}"></i></div>
+    <div class="research-body">
+      <h2 class="research-title">{{ direction.title }}</h2>
+      <p class="research-desc">{{ direction.description }}</p>
+    </div>
+  </article>
+  {% endfor %}
 </div>
 
-</div>
-
-<div class="section-card" style="margin-top: var(--space-8);">
-<p>Representative themes in ongoing work include agent memory safety, multi-agent evaluation, multimodal deepfake and content moderation risks, and trustworthy deployment of foundation models. See the <a href="{{ '/publications/' | relative_url }}">publications</a> page for selected papers.</p>
+<div class="page-cta">
+  <p>Explore the source-backed publication list for representative work across these directions.</p>
+  <a href="{{ '/publications/' | relative_url }}" class="action-link action-link-primary">View publications →</a>
 </div>

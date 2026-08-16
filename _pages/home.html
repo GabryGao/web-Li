@@ -5,128 +5,133 @@ sitemap: false
 permalink: /
 ---
 
-<section class="lab-hero">
-  <div class="lab-hero-grid">
-    <div class="lab-hero-copy">
-      <p class="eyebrow">AI Safety &amp; Trustworthy AI</p>
-      <h1 class="home-hero">{{ site.name }}</h1>
-      <p class="home-hero-sub">{{ site.title }} · The Hong Kong Polytechnic University</p>
-      <p class="hero-lead">{{ site.lab_tagline }}</p>
-      <div class="chip-container">
-        <a href="{{ '/research/' | relative_url }}" class="chip">Agentic AI Security</a>
-        <a href="{{ '/research/' | relative_url }}" class="chip">LLM Safety</a>
-        <a href="{{ '/research/' | relative_url }}" class="chip">Multimodal Trustworthiness</a>
-        <a href="{{ '/research/' | relative_url }}" class="chip">Responsible AI</a>
+{% assign profile = site.data.profile %}
+
+<section class="site-hero" aria-labelledby="home-title">
+  <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+  <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+  <div class="site-hero-grid">
+    <div class="site-hero-copy">
+      <p class="eyebrow"><span></span>{{ profile.eyebrow }}</p>
+      <h1 id="home-title">{{ site.name }}</h1>
+      <p class="hero-role">{{ site.title }}</p>
+      <p class="hero-affiliation">{{ profile.affiliation }}</p>
+      <p class="hero-lead">{{ profile.tagline }}</p>
+
+      <div class="hero-topic-row" aria-label="Research topics">
+        {% for direction in profile.research %}
+        <a class="tag-chip" href="#{{ direction.id }}">{{ direction.short_title }}</a>
+        {% endfor %}
       </div>
+
       <div class="hero-actions">
-        <a href="#openings" class="btn-pill btn-primary-cta">Join Us</a>
-        <a href="{{ '/publications/' | relative_url }}" class="btn-pill btn-secondary-cta">Publications</a>
-        <a href="mailto:{{ site.email }}" class="btn-pill btn-secondary-cta">Email</a>
+        <a href="#openings" class="action-link action-link-primary">Join Us <span aria-hidden="true">↗</span></a>
+        <a href="{{ '/publications/' | relative_url }}" class="action-link">Publications <span aria-hidden="true">→</span></a>
+        <a href="mailto:{{ site.email }}" class="action-link">Email <span aria-hidden="true">→</span></a>
       </div>
     </div>
-    <div class="lab-hero-side">
+
+    <aside class="site-hero-profile" aria-label="Profile">
       {% include sidebar.html %}
-    </div>
+    </aside>
   </div>
 </section>
 
-<section class="home-section" id="about">
-  <div class="section-title-bar">
-    <h2>About</h2>
+<section class="home-section" id="about" aria-labelledby="about-title">
+  <div class="section-heading">
+    <p class="section-kicker">Profile</p>
+    <h2 id="about-title">About</h2>
   </div>
-  <div class="section-card about-card">
-    <p>I am an Assistant Professor in the Department of Data Science and Artificial Intelligence (DSAI) at The Hong Kong Polytechnic University (PolyU).</p>
-    <p>Previously, I was a Research Fellow in the College of Computing and Data Science at NTU, working with Prof. XiaoFeng Wang and Prof. Wei Dong. I completed my Ph.D. with honors at Zhejiang University, co-supervised by Prof. Wenyuan Xu, Prof. Xiaoyu Ji, and Prof. Chen Yan. I obtained my B.Eng. with honors from Zhejiang University.</p>
-    <p>My research focuses on <strong>AI security and privacy</strong>, especially the security, privacy, and safety of <strong>multimodal LLMs &amp; agentic AI systems</strong>. I study how to secure interactions between agentic AI systems and the real world. My goal is to help AI agents become robust and responsible partners. Robust agents should be resilient to external attacks, and responsible agents should behave in a helpful, harmless, and honest manner. My work has appeared in security and AI/ML venues: IEEE S&amp;P, ACM CCS, USENIX Security, NDSS, NeurIPS, ICML, ICLR, KDD, CVPR, ACL, etc.</p>
-  </div>
-</section>
-
-<section class="home-section alt-bg" id="research">
-  <div class="section-title-bar">
-    <h2>Research Directions</h2>
-  </div>
-  <p class="section-intro">My group is broadly interested in the following research directions:</p>
-  <div class="research-grid modern-research">
-    <div class="research-card">
-      <div class="research-body">
-        <h4 class="research-title"><i class="fa-solid fa-shield-halved"></i> Security and Privacy of Agentic AI Systems</h4>
-        <p class="research-desc">Building robust and responsible agentic AI systems and protecting their interactions with the physical and digital world.</p>
-      </div>
-    </div>
-    <div class="research-card">
-      <div class="research-body">
-        <h4 class="research-title"><i class="fa-solid fa-people-group"></i> Responsible AI in Social Contexts</h4>
-        <p class="research-desc">Improving the safety, security, and privacy of multi-agent and human-agent interactions, as well as addressing risks in multimodal AIGC (e.g., deepfake generation and detection).</p>
-      </div>
-    </div>
-    <div class="research-card">
-      <div class="research-body">
-        <h4 class="research-title"><i class="fa-solid fa-flask"></i> Trustworthy AI for X</h4>
-        <p class="research-desc">Enabling reliable AI deployment in healthcare, power grids, software engineering, IoT, and telecommunications systems.</p>
-      </div>
-    </div>
-  </div>
-  <p class="section-more"><a href="{{ '/research/' | relative_url }}">Explore research &rarr;</a></p>
-</section>
-
-<section class="home-section" id="news">
-  <div class="section-title-bar">
-    <h2>Recent News</h2>
-  </div>
-  <div class="section-card news-scroll">
-    <div class="news-timeline home-news">
-      {% for article in site.data.news limit:8 %}
-      <div class="news-item">
-        <div class="news-date">{{ article.date }}</div>
-        <div class="news-headline">{{ article.headline }}</div>
-      </div>
+  <div class="surface-card about-card">
+    <div class="about-accent" aria-hidden="true">XL</div>
+    <div class="about-copy">
+      {% for paragraph in profile.bio %}
+      <p>{{ paragraph }}</p>
       {% endfor %}
     </div>
-    <p class="section-more" style="margin-bottom:0;"><a href="{{ '/news/' | relative_url }}">See all news &rarr;</a></p>
   </div>
 </section>
 
-<section class="home-section alt-bg" id="publications">
-  <div class="section-title-bar">
-    <h2>Selected Publications</h2>
+<section class="home-section section-band" id="research" aria-labelledby="research-title">
+  <div class="section-heading section-heading-split">
+    <div>
+      <p class="section-kicker">Focus</p>
+      <h2 id="research-title">Research Directions</h2>
+    </div>
+    <a href="{{ '/research/' | relative_url }}" class="text-link">Explore research <span aria-hidden="true">→</span></a>
   </div>
-  <p class="section-intro">(*: Equal Contribution, ^: Corresponding Author)</p>
-  <div class="selected-pubs">
-    {% for pub in site.data.publications limit:10 %}
-    <article class="pub-card">
-      <h4 class="pub-title">
-        {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
-      </h4>
-      <p class="pub-meta"><span class="pub-venue">{{ pub.venue }}</span>{% if pub.year %} · {{ pub.year }}{% endif %}</p>
-      <p class="pub-authors">{{ pub.authors }}</p>
-      <div class="pub-actions">
-        {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener" class="btn-pill btn-doi">Paper</a>{% endif %}
-        {% if pub.website %}<a href="{{ pub.website }}" target="_blank" rel="noopener" class="btn-pill btn-website">Website</a>{% endif %}
-        {% if pub.code %}<a href="{{ pub.code }}" target="_blank" rel="noopener" class="btn-pill btn-git">Code</a>{% endif %}
-        {% if pub.dataset %}<a href="{{ pub.dataset }}" target="_blank" rel="noopener" class="btn-pill btn-website">Dataset</a>{% endif %}
-        {% if pub.weights %}<a href="{{ pub.weights }}" target="_blank" rel="noopener" class="btn-pill btn-website">Weights</a>{% endif %}
+  <div class="research-grid modern-research">
+    {% for direction in profile.research %}
+    <article class="research-card" id="{{ direction.id }}">
+      <div class="research-index">0{{ forloop.index }}</div>
+      <div class="research-icon" aria-hidden="true"><i class="fa-solid fa-{{ direction.icon }}"></i></div>
+      <div class="research-body">
+        <h3 class="research-title">{{ direction.title }}</h3>
+        <p class="research-desc">{{ direction.description }}</p>
       </div>
     </article>
     {% endfor %}
   </div>
-  <p class="section-more"><a href="{{ '/publications/' | relative_url }}">All publications &rarr;</a></p>
 </section>
 
-<section class="home-section" id="openings">
-  <div class="section-title-bar">
-    <h2>Join Us</h2>
+<section class="home-section" id="news" aria-labelledby="news-title">
+  <div class="section-heading section-heading-split">
+    <div>
+      <p class="section-kicker">Updates</p>
+      <h2 id="news-title">Recent News</h2>
+    </div>
+    <a href="{{ '/news/' | relative_url }}" class="text-link">All news <span aria-hidden="true">→</span></a>
   </div>
-  <div class="recruit-banner">
-    <div class="recruit-text">
-      <strong>We are recruiting</strong>
-      <span>PhDs for 27Fall, Postdocs, and research assistants/interns (remote/onsite). If you are seeking academic collaboration or are interested in joining my lab, please email me.</span>
+  <div class="surface-card news-panel">
+    <div class="news-timeline home-news">
+      {% for article in site.data.news limit:12 %}
+      <article class="news-item">
+        <time class="news-date">{{ article.date }}</time>
+        <div>
+          <p class="news-headline">{{ article.headline }}</p>
+          {% if article.links %}
+          <div class="news-links">
+            {% for link in article.links %}
+            <a class="news-link" href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }} ↗</a>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="home-section section-band" id="publications" aria-labelledby="publications-title">
+  <div class="section-heading section-heading-split">
+    <div>
+      <p class="section-kicker">Selected work</p>
+      <h2 id="publications-title">Publications</h2>
+    </div>
+    <a href="{{ '/publications/' | relative_url }}" class="text-link">All publications <span aria-hidden="true">→</span></a>
+  </div>
+  <p class="section-intro">Selected research listed on the source academic homepage. (*: Equal Contribution, ^: Corresponding Author)</p>
+  <div class="selected-pubs publication-grid">
+    {% for pub in site.data.publications limit:8 %}
+      {% include publication-card.html pub=pub %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="home-section" id="openings" aria-labelledby="openings-title">
+  <div class="recruit-panel">
+    <div class="recruit-panel-copy">
+      <p class="section-kicker">Open positions</p>
+      <h2 id="openings-title">{{ profile.recruiting.headline }}</h2>
+      <p>{{ profile.recruiting.text }}</p>
+      <small>{{ profile.recruiting.note }}</small>
     </div>
     <div class="recruit-actions">
-      <a href="mailto:{{ site.email }}" class="recruit-btn">{{ site.email }}</a>
+      <a href="mailto:{{ site.email }}" class="action-link action-link-light">{{ site.email }} <span aria-hidden="true">↗</span></a>
       {% if site.links.email_alt and site.links.email_alt != "" %}
-      <a href="mailto:{{ site.links.email_alt }}" class="recruit-btn recruit-btn-alt">{{ site.links.email_alt }}</a>
+      <a href="mailto:{{ site.links.email_alt }}" class="action-link action-link-ghost">{{ site.links.email_alt }} <span aria-hidden="true">↗</span></a>
       {% endif %}
     </div>
   </div>
-  <p class="section-note">Due to the volume of inquiries, my apology if you don’t receive my reply.</p>
 </section>

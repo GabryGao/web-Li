@@ -1,96 +1,73 @@
 // =============================================================
-// Profile card — home page sidebar
+// Profile card
 // =============================================================
 
 .profile-card {
-  text-align: center;
-  background: linear-gradient(
-    160deg,
-    var(--bg-card) 0%,
-    var(--bg-secondary) 100%
-  );
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-xl);
-  padding: var(--space-10) var(--space-6) var(--space-8);
-  box-shadow: var(--shadow-md);
   position: relative;
   overflow: hidden;
+  text-align: left;
+  padding: var(--space-4);
+  border: 1px solid var(--border-color);
+  border-radius: calc(var(--radius-xl) + 0.25rem);
+  background: var(--bg-card);
+  box-shadow: var(--shadow-md);
+}
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--accent), #A78BFA);
-  }
+.profile-photo-wrap { position: relative; }
 
-  .profile-photo {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: var(--space-4);
-    border: 3px solid var(--bg-primary);
-    box-shadow:
-      0 0 0 1px var(--border-color),
-      var(--shadow-md);
-    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
-  }
+.profile-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1.04;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  object-position: center top;
+  background: var(--bg-secondary);
+}
 
-  &:hover .profile-photo {
-    transform: scale(1.04);
-  }
+.profile-status {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #37b77c;
+}
 
-  .profile-name {
-    font-family: var(--font-display);
-    font-size: 1.375rem;
-    font-weight: 700;
-    margin-bottom: var(--space-1);
-    margin-top: 0;
-  }
+.profile-name { margin: var(--space-5, 1.25rem) 0 0.15rem; font-size: 1.25rem; }
+.profile-title { margin: 0; color: var(--text-primary); font-size: 0.84rem; font-weight: 700; }
+.profile-institution { margin: 0.15rem 0 0; color: var(--text-muted); font-size: 0.78rem; }
+.profile-tagline { margin: var(--space-3) 0 0; color: var(--text-secondary); font-size: 0.8rem; line-height: 1.48; }
 
-  .profile-title {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    margin-bottom: 0.15rem;
-  }
+.profile-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border-color);
+}
 
-  .profile-institution {
-    font-size: 0.82rem;
-    color: var(--text-muted);
-    margin-bottom: var(--space-2);
-  }
+.profile-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.28rem;
+  min-height: 3.25rem;
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  font-size: 0.68rem;
+  font-weight: 700;
+}
 
-  .profile-tagline {
-    font-size: 0.84rem;
-    color: var(--text-secondary);
-    margin: var(--space-3) 0 0;
-    line-height: 1.45;
-  }
+.profile-link i { color: var(--accent); font-size: 0.9rem; }
+.profile-link:hover { color: var(--accent); }
 
-  .profile-links {
-    display: flex;
-    justify-content: center;
-    gap: var(--space-1);
-    margin-top: var(--space-4);
-    padding-top: var(--space-4);
-    border-top: 1px solid var(--border-color);
-    flex-wrap: wrap;
-  }
-
-  .profile-edu {
-    text-align: left;
-    margin-top: var(--space-4);
-    list-style: none;
-    padding-left: 0;
-
-    li {
-      font-size: 0.84rem;
-      color: var(--text-secondary);
-      padding: var(--space-1) 0;
-      max-width: none;
-    }
-  }
+@media (max-width: 390px) {
+  .profile-link span { display: none; }
+  .profile-link { min-height: 2.7rem; }
 }

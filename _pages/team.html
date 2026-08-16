@@ -5,38 +5,43 @@ sitemap: false
 permalink: /team/
 ---
 
-## Team
+{% assign profile = site.data.profile %}
 
-<div class="section-card">
-<div class="pi-card">
-<img src="{{ '/images/' | append: site.photo | relative_url }}" class="pi-photo" alt="{{ site.name }}" loading="lazy">
-<div>
-<h3 class="pi-name">{{ site.name }}</h3>
-<p style="font-style: italic; color: var(--text-secondary);">{{ site.title }}, The Hong Kong Polytechnic University</p>
-<p style="color: var(--text-muted);">{{ site.lab_tagline }}</p>
-<div class="pi-links">
-{% if site.email %}<a href="mailto:{{ site.email }}" class="icon-link" title="Email"><i class="fa-solid fa-envelope"></i></a>{% endif %}
-{% if site.links.google_scholar and site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}" class="icon-link" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif %}
-{% if site.links.researchgate and site.links.researchgate != "" %}<a href="{{ site.links.researchgate }}" class="icon-link" title="ResearchGate"><i class="ai ai-researchgate"></i></a>{% endif %}
-</div>
-{% if site.data.pi[0].education %}
-<ul style="margin-top: var(--space-4);">
-{% for education in site.data.pi[0].education %}
-<li>{{ education | replace: "-","&#8211;" }}</li>
-{% endfor %}
-</ul>
-{% endif %}
-</div>
-</div>
-</div>
+<header class="page-hero page-hero-compact">
+  <p class="section-kicker">People</p>
+  <h1>Team</h1>
+  <p>Principal investigator profile and verified openings. A public member roster has not been supplied.</p>
+</header>
 
-## Openings
+<section class="surface-card pi-card">
+  <img src="{{ '/images/' | append: site.photo | relative_url }}" class="pi-photo" alt="Portrait of {{ site.name }}">
+  <div>
+    <p class="section-kicker">Principal investigator</p>
+    <h2 class="pi-name">{{ site.name }}</h2>
+    <p class="pi-role">{{ site.title }} · The Hong Kong Polytechnic University</p>
+    <p>{{ profile.tagline }}</p>
+    <div class="pi-links">
+      <a href="mailto:{{ site.email }}" class="action-link">Email</a>
+      <a href="{{ site.links.google_scholar }}" target="_blank" rel="noopener" class="action-link">Scholar ↗</a>
+      <a href="{{ site.links.researchgate }}" target="_blank" rel="noopener" class="action-link">ResearchGate ↗</a>
+    </div>
+    {% if site.data.pi[0].education %}
+    <ul class="pi-history">
+      {% for education in site.data.pi[0].education %}<li>{{ education }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</section>
 
-<div class="recruit-banner">
-<div class="recruit-text">
-<strong>We are recruiting</strong>
-<span>PhDs for 27Fall, Postdocs, and research assistants/interns (remote/onsite). If you are seeking academic collaboration or are interested in joining my lab, please email me at <a href="mailto:{{ site.email }}">{{ site.email }}</a>{% if site.links.email_alt and site.links.email_alt != "" %} or <a href="mailto:{{ site.links.email_alt }}">{{ site.links.email_alt }}</a>{% endif %}.</span>
-</div>
-</div>
-
-<p class="section-note">Student and collaborator listings will be added when publicly available. Due to the volume of inquiries, my apology if you don’t receive my reply.</p>
+<section class="recruit-panel team-recruit-panel">
+  <div class="recruit-panel-copy">
+    <p class="section-kicker">Open positions</p>
+    <h2>{{ profile.recruiting.headline }}</h2>
+    <p>{{ profile.recruiting.text }}</p>
+    <small>{{ profile.recruiting.note }}</small>
+  </div>
+  <div class="recruit-actions">
+    <a href="mailto:{{ site.email }}" class="action-link action-link-light">{{ site.email }} ↗</a>
+    <a href="mailto:{{ site.links.email_alt }}" class="action-link action-link-ghost">{{ site.links.email_alt }} ↗</a>
+  </div>
+</section>

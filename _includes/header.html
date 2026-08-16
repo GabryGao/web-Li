@@ -2,7 +2,10 @@
   <div class="container" style="max-width: var(--container-max);">
     <a class="navbar-brand" href="{{ '/' | relative_url }}">
       <span class="brand-mark">XL</span>
-      <span class="brand-text">{{ site.name | escape }}</span>
+      <span class="brand-lockup">
+        <strong class="brand-text">{{ site.name | escape }}</strong>
+        <small>AI Security @ PolyU</small>
+      </span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -20,7 +23,7 @@
         </li>
         {% endfor %}
       </ul>
-      <div class="d-flex align-items-center" style="gap: var(--space-2);">
+      <div class="nav-tools">
         <button class="search-toggle" id="searchToggle" aria-label="Search site">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>

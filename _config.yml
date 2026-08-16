@@ -23,7 +23,7 @@ links:
 # ============================================================
 # STEP 3: Site Settings
 # ============================================================
-accent_color: "#7C3AED"
+accent_color: "#5E52E8"
 dark_mode: true
 description: "Xinfeng Li — AI Security and Privacy, Trustworthy AI, Multimodal LLMs & Agentic AI Safety. Assistant Professor at The Hong Kong Polytechnic University."
 baseurl: "/web-Li"

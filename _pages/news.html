@@ -5,15 +5,28 @@ sitemap: false
 permalink: /news/
 ---
 
-## News
+<header class="page-hero page-hero-compact">
+  <p class="section-kicker">Timeline</p>
+  <h1>News</h1>
+  <p>Research announcements and professional updates listed on the source academic homepage.</p>
+</header>
 
-<div class="section-card">
-<div class="news-timeline home-news">
-{% for article in site.data.news %}
-<div class="news-item">
-<div class="news-date">{{ article.date }}</div>
-<div class="news-headline">{{ article.headline }}</div>
-</div>
-{% endfor %}
-</div>
+<div class="surface-card news-panel news-page-panel">
+  <div class="news-timeline home-news">
+    {% for article in site.data.news %}
+    <article class="news-item">
+      <time class="news-date">{{ article.date }}</time>
+      <div>
+        <p class="news-headline">{{ article.headline }}</p>
+        {% if article.links %}
+        <div class="news-links">
+          {% for link in article.links %}
+          <a class="news-link" href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }} ↗</a>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
 </div>

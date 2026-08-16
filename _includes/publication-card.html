@@ -1,0 +1,20 @@
+{% assign pub = include.pub %}
+<article class="publication-card" data-pub-searchable>
+  <div class="publication-card-topline">
+    <span class="publication-year-label">{{ pub.year }}</span>
+    <span class="publication-venue">{{ pub.venue }}</span>
+  </div>
+  <h3 class="publication-title">
+    {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
+  </h3>
+  <p class="publication-authors">{{ pub.authors }}</p>
+  {% if pub.url or pub.website or pub.code or pub.dataset or pub.weights %}
+  <div class="publication-actions" aria-label="Resources for {{ pub.title }}">
+    {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">Paper ↗</a>{% endif %}
+    {% if pub.website %}<a href="{{ pub.website }}" target="_blank" rel="noopener">Website ↗</a>{% endif %}
+    {% if pub.code %}<a href="{{ pub.code }}" target="_blank" rel="noopener">Code ↗</a>{% endif %}
+    {% if pub.dataset %}<a href="{{ pub.dataset }}" target="_blank" rel="noopener">Dataset ↗</a>{% endif %}
+    {% if pub.weights %}<a href="{{ pub.weights }}" target="_blank" rel="noopener">Weights ↗</a>{% endif %}
+  </div>
+  {% endif %}
+</article>

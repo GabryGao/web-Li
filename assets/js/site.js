@@ -50,6 +50,25 @@
 
   var searchInput = document.getElementById('pubSearch');
   if (searchInput) {
+    var updateYearHeadings = function () {
+      var headings = document.querySelectorAll('.publication-year');
+
+      headings.forEach(function (heading) {
+        var sibling = heading.nextElementSibling;
+        var hasVisibleEntry = false;
+
+        while (sibling && !sibling.classList.contains('publication-year')) {
+          if (sibling.matches('[data-pub-searchable]') && sibling.style.display !== 'none') {
+            hasVisibleEntry = true;
+            break;
+          }
+          sibling = sibling.nextElementSibling;
+        }
+
+        heading.style.display = hasVisibleEntry ? '' : 'none';
+      });
+    };
+
     searchInput.addEventListener('input', function () {
       var query = this.value.toLowerCase().trim();
       var entries = document.querySelectorAll('[data-pub-searchable]');
@@ -62,6 +81,8 @@
         var text = entry.textContent.toLowerCase();
         entry.style.display = text.includes(query) ? '' : 'none';
       });
+
+      updateYearHeadings();
     });
   }
 

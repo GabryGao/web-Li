@@ -1,12 +1,8 @@
 <footer class="site-footer">
   <div class="footer-grid">
-    <div>
-      <h5>{{ site.name }}</h5>
-      <p>
-        {{ site.title }}<br>
-        Department of Data Science and Artificial Intelligence<br>
-        The Hong Kong Polytechnic University
-      </p>
+    <div class="footer-profile">
+      <div class="footer-brand"><span class="brand-mark">XL</span><strong>{{ site.name }}</strong></div>
+      <p>{{ site.title }}<br>The Hong Kong Polytechnic University</p>
       {% if site.lab_tagline %}<p class="footer-tagline">{{ site.lab_tagline }}</p>{% endif %}
     </div>
     <div>
@@ -30,7 +26,8 @@
   </div>
   <div class="footer-grid">
     <div class="footer-copyright" style="grid-column: 1 / -1;">
-      &copy; {{ "now" | date: "%Y" }} {{ site.name | escape }}
+      <span>&copy; {{ "now" | date: "%Y" }} {{ site.name | escape }}</span>
+      <span>Verified academic profile · Unavailable information is intentionally left blank.</span>
     </div>
   </div>
 </footer>

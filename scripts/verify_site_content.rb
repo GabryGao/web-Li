@@ -56,6 +56,35 @@ scan_paths.each do |path|
   end
 end
 
+render_expectations = {
+  "_site/index.html" => [
+    "site-hero",
+    "research-card",
+    "news-link",
+    "recruit-panel",
+    "AI Security @ PolyU"
+  ],
+  "_site/publications/index.html" => [
+    "publication-year",
+    "publication-card"
+  ],
+  "_site/research/index.html" => [
+    "agentic-ai-security",
+    "responsible-ai",
+    "trustworthy-ai-for-x"
+  ]
+}
+
+render_expectations.each do |relative_path, markers|
+  path = ROOT.join(relative_path)
+  next unless path.file?
+
+  html = path.read
+  markers.each do |marker|
+    errors << "#{relative_path}: missing rendered marker #{marker}" unless html.include?(marker)
+  end
+end
+
 abort(errors.join("\n")) unless errors.empty?
 
 puts "content verification passed"
