@@ -23,8 +23,8 @@ links:
 # ============================================================
 # STEP 3: Site Settings
 # ============================================================
-accent_color: "#5E52E8"
-dark_mode: true
+accent_color: "#8B3A3A"
+dark_mode: false
 description: "Xinfeng Li — AI Security and Privacy, Trustworthy AI, Multimodal LLMs & Agentic AI Safety. Assistant Professor at The Hong Kong Polytechnic University."
 baseurl: "/web-Li"
 url: "https://GabryGao.github.io"

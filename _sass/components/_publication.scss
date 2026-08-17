@@ -8,13 +8,13 @@
 .publication-card {
   padding: clamp(1.25rem, 3vw, 1.8rem);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-sm);
   background: var(--bg-card);
   box-shadow: var(--shadow-sm);
   transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
 }
 
-.publication-card:hover { transform: translateY(-2px); border-color: rgba(94, 82, 232, 0.38); box-shadow: var(--shadow-md); }
+.publication-card:hover { transform: translateY(-1px); border-color: var(--accent); box-shadow: none; }
 
 .publication-card-topline {
   display: flex;
@@ -40,7 +40,7 @@
   display: inline-flex;
   padding: 0.28rem 0.58rem;
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-sm);
   color: var(--text-secondary);
   background: var(--bg-secondary);
   font-size: 0.7rem;
@@ -67,7 +67,7 @@
   margin: 0;
   padding: 0.75rem 1rem 0.75rem 2.8rem;
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-sm);
   background: var(--bg-card);
   color: var(--text-primary);
   font-family: var(--font-body);

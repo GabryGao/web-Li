@@ -8,9 +8,9 @@
   text-align: left;
   padding: var(--space-4);
   border: 1px solid var(--border-color);
-  border-radius: calc(var(--radius-xl) + 0.25rem);
+  border-radius: var(--radius-lg);
   background: var(--bg-card);
-  box-shadow: var(--shadow-md);
+  box-shadow: none;
 }
 
 .profile-photo-wrap { position: relative; }
@@ -19,7 +19,7 @@
   display: block;
   width: 100%;
   aspect-ratio: 1 / 1.04;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-sm);
   object-fit: cover;
   object-position: center top;
   background: var(--bg-secondary);
@@ -57,7 +57,7 @@
   justify-content: center;
   gap: 0.28rem;
   min-height: 3.25rem;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-sm);
   color: var(--text-secondary);
   background: var(--bg-secondary);
   font-size: 0.68rem;

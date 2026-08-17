@@ -1,27 +1,26 @@
 // =============================================================
-// Design tokens — precise, research-first academic profile
+// Design tokens — restrained editorial academic profile
 // =============================================================
 
 :root {
-  --accent: #5e52e8;
-  --accent-hover: #4538c9;
-  --accent-light: #eceaff;
-  --accent-soft: rgba(94, 82, 232, 0.09);
-  --accent-blue: #3e7bea;
+  --accent: #8b3a3a;
+  --accent-hover: #6f2c2c;
+  --accent-light: #f3e8e3;
+  --accent-soft: rgba(139, 58, 58, 0.08);
 
-  --bg-primary: #f8f9fd;
-  --bg-secondary: #f1f3fa;
+  --bg-primary: #fbfaf7;
+  --bg-secondary: #f3f0ea;
   --bg-card: #ffffff;
-  --text-primary: #111a32;
-  --text-secondary: #394560;
-  --text-muted: #758099;
-  --border-color: #e1e5f0;
-  --shadow-sm: 0 4px 18px rgba(25, 37, 75, 0.05);
-  --shadow-md: 0 14px 42px rgba(25, 37, 75, 0.09);
-  --shadow-lg: 0 24px 72px rgba(25, 37, 75, 0.12);
-  --shadow-navbar: 0 1px 0 rgba(25, 37, 75, 0.08);
+  --text-primary: #262322;
+  --text-secondary: #494441;
+  --text-muted: #77706b;
+  --border-color: #ddd7cf;
+  --shadow-sm: none;
+  --shadow-md: 0 8px 24px rgba(54, 45, 39, 0.06);
+  --shadow-lg: 0 12px 36px rgba(54, 45, 39, 0.08);
+  --shadow-navbar: 0 1px 0 rgba(54, 45, 39, 0.10);
 
-  --container-max: 1180px;
+  --container-max: 1120px;
   --container-padding: clamp(1.1rem, 3vw, 2rem);
 
   --space-1: 0.25rem;
@@ -33,35 +32,35 @@
   --space-10: 2.5rem;
   --space-12: 3rem;
   --space-16: 4rem;
-  --space-section: clamp(3.8rem, 8vw, 6.5rem);
+  --space-section: clamp(3.1rem, 6vw, 5rem);
 
-  --radius-sm: 0.5rem;
-  --radius-md: 0.75rem;
-  --radius-lg: 1rem;
-  --radius-xl: 1.375rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.35rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.625rem;
   --radius-full: 9999px;
 
   --transition-fast: 150ms ease;
   --transition-base: 250ms ease;
   --transition-slow: 400ms cubic-bezier(0.22, 1, 0.36, 1);
 
-  --font-display: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
 }
 
 [data-bs-theme="dark"] {
-  --accent: #a9a2ff;
-  --accent-hover: #c8c4ff;
-  --accent-light: rgba(169, 162, 255, 0.14);
-  --accent-soft: rgba(169, 162, 255, 0.12);
+  --accent: #d7a09a;
+  --accent-hover: #efbdb7;
+  --accent-light: rgba(215, 160, 154, 0.12);
+  --accent-soft: rgba(215, 160, 154, 0.10);
 
-  --bg-primary: #101422;
-  --bg-secondary: #171c2e;
-  --bg-card: #1c2237;
-  --text-primary: #f3f5fb;
-  --text-secondary: #c5ccdc;
-  --text-muted: #909ab3;
-  --border-color: #303851;
+  --bg-primary: #201d1b;
+  --bg-secondary: #292522;
+  --bg-card: #302b28;
+  --text-primary: #f7f2ed;
+  --text-secondary: #ded6cf;
+  --text-muted: #aaa098;
+  --border-color: #47403b;
   --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.22);
   --shadow-md: 0 14px 42px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 24px 72px rgba(0, 0, 0, 0.38);

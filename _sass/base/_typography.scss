@@ -1,29 +1,28 @@
 // =============================================================
-// Typography — compact, high-contrast academic interface
+// Typography — quiet, familiar academic web typography
 // =============================================================
 
 body {
   font-family: var(--font-body);
   font-size: 1rem;
-  line-height: 1.65;
-  font-optical-sizing: auto;
+  line-height: 1.62;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
-  font-weight: 700;
-  letter-spacing: -0.035em;
+  font-weight: 650;
+  letter-spacing: -0.018em;
   color: var(--text-primary);
   margin-top: var(--space-10);
   margin-bottom: var(--space-4);
   line-height: 1.2;
 }
 
-h1 { font-size: clamp(2.35rem, 5vw, 4.5rem); font-weight: 750; line-height: 1.05; }
-h2 { font-size: clamp(1.65rem, 3vw, 2.25rem); }
-h3 { font-size: 1.2rem; }
-h4 { font-size: 1.05rem; }
+h1 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 650; line-height: 1.08; }
+h2 { font-size: clamp(1.45rem, 2.5vw, 1.9rem); }
+h3 { font-size: 1.18rem; }
+h4 { font-size: 1rem; }
 
 p { color: var(--text-secondary); margin-bottom: var(--space-4); max-width: 72ch; }
 li { max-width: 72ch; }

@@ -10,7 +10,7 @@ permalink: /team/
 <header class="page-hero page-hero-compact">
   <p class="section-kicker">People</p>
   <h1>Team</h1>
-  <p>Principal investigator profile and verified openings. A public member roster has not been supplied.</p>
+  <p>Principal investigator and Ph.D. students.</p>
 </header>
 
 <section class="surface-card pi-card">
@@ -32,6 +32,23 @@ permalink: /team/
     {% endif %}
   </div>
 </section>
+
+{% if site.data.team_members and site.data.team_members.size > 0 %}
+<section class="team-roster" aria-labelledby="phd-students-title">
+  <h2 id="phd-students-title">Ph.D. Students</h2>
+  <ul class="student-list">
+    {% for member in site.data.team_members %}
+    <li class="student-row">
+      <div class="student-name-line">
+        <strong class="student-name">{{ member.name }}</strong>
+        <span class="student-role">{{ member.role }}</span>
+      </div>
+      {% if member.advising %}<p>{{ member.advising }}</p>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
 
 <section class="recruit-panel team-recruit-panel">
   <div class="recruit-panel-copy">
