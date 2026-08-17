@@ -10,9 +10,9 @@
 
 ## Global Constraints
 
-- Display only: 滕超, 顺发, Chen Jiahe, 徐笛, Shencan.
+- Display only: Chao Teng, Shunfa, Jiahe Chen, Di Xu, Can Shen.
 - Do not invent English spellings, surnames, links, dates, photos, research descriptions, or advisors.
-- Show `Co-advised with` only for 顺发, Chen Jiahe, and 徐笛 using the exact approved advisor strings.
+- Show `Co-advised with` only for Shunfa, Jiahe Chen, and Di Xu using the exact approved advisor strings.
 
 ---
 
@@ -31,14 +31,14 @@
 Run:
 
 ```bash
-rg -n '滕超|顺发|Chen Jiahe|徐笛|Shencan' _site/team/index.html
+rg -n 'Chao Teng|Shunfa|Jiahe Chen|Di Xu|Can Shen' _site/team/index.html
 ```
 
 Expected: fewer than five distinct approved names are present.
 
 - [x] **Step 2: Replace the data records**
 
-Set `_data/team_members.yml` to the five approved names. Add the approved `advising` field to 顺发, Chen Jiahe, and 徐笛 only.
+Set `_data/team_members.yml` to the five approved English names in given-name-first order. Add the approved `advising` field to Shunfa, Jiahe Chen, and Di Xu only.
 
 - [x] **Step 3: Build and verify the generated page**
 
@@ -53,7 +53,7 @@ Expected: exit code 0.
 Then run:
 
 ```bash
-python3 -c 'from pathlib import Path; import re; html=Path("_site/team/index.html").read_text(); rows=re.findall(r"<li class=\"student-row\">.*?</li>", html, re.S); expected=["滕超","顺发","Chen Jiahe","徐笛","Shencan"]; assert all(any(name in row for row in rows) for name in expected); assert any("顺发" in row and "Zhiwen Pan" in row for row in rows); assert all(any(name in row and "Lansheng Han" in row for row in rows) for name in ["Chen Jiahe","徐笛"]); assert all(any(name in row and "Co-advised" not in row for row in rows) for name in ["滕超","Shencan"]); print("team roster verified")'
+python3 -c 'from pathlib import Path; import re; html=Path("_site/team/index.html").read_text(); rows=re.findall(r"<li class=\"student-row\">.*?</li>", html, re.S); expected=["Chao Teng","Shunfa","Jiahe Chen","Di Xu","Can Shen"]; assert all(any(name in row for row in rows) for name in expected); assert any("Shunfa" in row and "Zhiwen Pan" in row for row in rows); assert all(any(name in row and "Lansheng Han" in row for row in rows) for name in ["Jiahe Chen","Di Xu"]); assert all(any(name in row and "Co-advised" not in row for row in rows) for name in ["Chao Teng","Can Shen"]); print("team roster verified")'
 ```
 
 Expected: `team roster verified`.

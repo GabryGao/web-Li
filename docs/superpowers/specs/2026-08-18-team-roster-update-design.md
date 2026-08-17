@@ -8,20 +8,20 @@ Update the public Ph.D. student roster without changing the Team page layout.
 
 Use only the names supplied by the site owner:
 
-- 滕超
-- 顺发
-- Chen Jiahe
-- 徐笛
-- Shencan
+- Chao Teng
+- Shunfa
+- Jiahe Chen
+- Di Xu
+- Can Shen
 
 Do not invent English spellings, surnames, profile links, start dates, photographs, or research descriptions.
 
 ## Advising information
 
-- 顺发: `Co-advised with Prof. Zhiwen Pan, University of Macau`
-- Chen Jiahe: `Co-advised with Prof. Lansheng Han, Huazhong University of Science and Technology`
-- 徐笛: `Co-advised with Prof. Lansheng Han, Huazhong University of Science and Technology`
-- 滕超 and Shencan: omit the advising line because no advisor information was supplied.
+- Shunfa: `Co-advised with Prof. Zhiwen Pan, University of Macau`
+- Jiahe Chen: `Co-advised with Prof. Lansheng Han, Huazhong University of Science and Technology`
+- Di Xu: `Co-advised with Prof. Lansheng Han, Huazhong University of Science and Technology`
+- Chao Teng and Can Shen: omit the advising line because no advisor information was supplied.
 
 ## Verification
 
