@@ -5,47 +5,23 @@ sitemap: false
 permalink: /about/
 ---
 
-## About
-
-<div class="about-layout">
-<div class="section-card">
-<div class="pi-card">
-<img src="{{ '/images/' | append: site.photo | relative_url }}" class="pi-photo" alt="{{ site.name }}" loading="lazy">
-<div>
-<h3 class="pi-name">{{ site.name }}</h3>
-<p style="font-style: italic; color: var(--text-secondary);">{{ site.title }}, The Hong Kong Polytechnic University</p>
-<p style="color: var(--text-muted);">{{ site.lab_tagline }}</p>
-<div class="pi-links">
-{% if site.email %}<a href="mailto:{{ site.email }}" class="icon-link" title="Email"><i class="fa-solid fa-envelope"></i></a>{% endif %}
-{% if site.links.email_alt and site.links.email_alt != "" %}<a href="mailto:{{ site.links.email_alt }}" class="icon-link" title="Alternate email"><i class="fa-regular fa-envelope"></i></a>{% endif %}
-{% if site.links.google_scholar and site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}" class="icon-link" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>{% endif %}
-{% if site.links.researchgate and site.links.researchgate != "" %}<a href="{{ site.links.researchgate }}" class="icon-link" title="ResearchGate"><i class="ai ai-researchgate"></i></a>{% endif %}
-</div>
-</div>
-</div>
-</div>
-</div>
+<header class="page-hero page-hero-compact">
+  <p class="section-kicker">Research profile</p>
+  <h1>About</h1>
+  <p>Research on security, privacy, and trustworthy artificial intelligence.</p>
+</header>
 
 <div class="section-card">
-<p>I am an Assistant Professor in the Department of Data Science and Artificial Intelligence (DSAI) at The Hong Kong Polytechnic University (PolyU).</p>
-<p>Previously, I was a Research Fellow in the College of Computing and Data Science at NTU, working with Prof. XiaoFeng Wang and Prof. Wei Dong. I completed my Ph.D. with honors at Zhejiang University, co-supervised by Prof. Wenyuan Xu, Prof. Xiaoyu Ji, and Prof. Chen Yan. I obtained my B.Eng. with honors from Zhejiang University.</p>
-<p>My research focuses on <strong>AI security and privacy</strong>, especially the security, privacy, and safety of <strong>multimodal LLMs &amp; agentic AI systems</strong>. I study how to secure interactions between agentic AI systems and the real world. My goal is to help AI agents become robust and responsible partners. Robust agents should be resilient to external attacks, and responsible agents should behave in a helpful, harmless, and honest manner. My work has appeared in security and AI/ML venues: IEEE S&amp;P, ACM CCS, USENIX Security, NDSS, NeurIPS, ICML, ICLR, KDD, CVPR, ACL, etc.</p>
-</div>
-
-## Education
-
-<div class="section-card">
-<ul>
-{% for education in site.data.pi[0].education %}
-<li>{{ education | replace: "-","&#8211;" }}</li>
+{% assign profile = site.data.profile %}
+{% for paragraph in profile.about %}
+<p>{{ paragraph }}</p>
 {% endfor %}
-</ul>
 </div>
 
-## Professional Services
+<h2 class="content-section-title">Professional Services</h2>
 
 <div class="section-card">
-<p>I actively contribute to the academic community through program organization and peer review for leading conferences and journals in security, AI, and systems.</p>
+<p>Dr. Li contributes to the academic community through program organization and peer review for conferences and journals in security, AI, and systems.</p>
 <h4>Program Organization</h4>
 <ul>
 <li>KDD 2025: Tutorial Organizer</li>
@@ -63,7 +39,7 @@ permalink: /about/
 </ul>
 </div>
 
-## Honors and Awards
+<h2 class="content-section-title">Honors and Awards</h2>
 
 <div class="section-card">
 <ul>

@@ -59,10 +59,11 @@ end
 render_expectations = {
   "_site/index.html" => [
     "site-hero",
+    "hero-career",
     "research-card",
     "news-link",
-    "recruit-panel",
-    "AI Security @ PolyU"
+    "spais-lab.png",
+    "/openings/"
   ],
   "_site/publications/index.html" => [
     "publication-year",
@@ -72,6 +73,10 @@ render_expectations = {
     "agentic-ai-security",
     "responsible-ai",
     "trustworthy-ai-for-x"
+  ],
+  "_site/openings/index.html" => [
+    "Openings",
+    "We are recruiting"
   ]
 }
 

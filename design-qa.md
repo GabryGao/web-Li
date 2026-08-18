@@ -1,55 +1,44 @@
-# Design QA — Xinfeng Li academic profile
+# Design QA — SPAIS Lab site refresh
 
 ## Evidence
 
-- Source visual truth: `https://chenyangsi.top/index.html`
-- Source desktop capture: `/private/tmp/xinfeng-source-desktop-1280.png`
-- Implementation desktop capture: `/private/tmp/xinfeng-local-desktop-1280.png`
-- Desktop side-by-side comparison: `/private/tmp/xinfeng-design-comparison-desktop.png`
-- Source mobile capture: `/private/tmp/xinfeng-source-mobile.png`
-- Implementation mobile capture: `/private/tmp/xinfeng-local-mobile.png`
-- Mobile side-by-side comparison: `/private/tmp/xinfeng-design-comparison-mobile.png`
-- Desktop viewport/state: `1280 x 720`, light theme, homepage at top.
-- Desktop source/implementation pixels: `1280 x 720` each. CSS viewport: `1280 x 720`; browser DPR reported `2`; screenshots were already normalized to CSS pixel dimensions.
-- Mobile viewport/state: `390 x 844`, light theme, homepage at top with menu closed.
-- Mobile source/implementation pixels: `390 x 844` each. CSS viewport: `390 x 844`; DPR `1`.
+- Approved visual direction: preserve the existing warm cream and burgundy academic-site style.
+- Owner-supplied Home reference: `/Users/fara./Library/Containers/com.tencent.xinWeChat/Data/Documents/xwechat_files/wxid_5dji56bs0chf22_1df1/temp/RWTemp/2026-08/63b1f4a0a1ab5574a8933e81bd9ef27f/d4df6e943905d0577baa88e9cd5f2554.png`
+- Supplied brand asset: `/Users/fara./Downloads/logo/SPAIS-Lab.png`
+- Implementation Home capture: `/private/tmp/spais-home-desktop.png`
+- Implementation About capture: `/private/tmp/spais-about-desktop-fixed.png`
+- Implementation Team capture: `/private/tmp/spais-team-roster-desktop.png`
+- Implementation Openings capture: `/private/tmp/spais-openings-desktop-ready.png`
+- Implementation mobile captures: `/private/tmp/spais-home-mobile.png` and `/private/tmp/spais-team-mobile.png`
+- Desktop viewport: `1280 x 720`, light theme.
+- Mobile viewport: `390 x 844`, light theme.
 
 ## Full-view comparison
 
-The implementation preserves the reference site's core composition: compact white navigation, prominent identity block, left-aligned academic information, portrait on the right at desktop, and a single-column mobile hero. It intentionally adapts the reference's dark purple hero and serif display face into a lighter PolyU-oriented AI-safety identity while retaining the same information hierarchy.
+The refreshed Home keeps the approved structure from the supplied reference: personal information on the left, portrait/profile card on the right, compact topic tags, and restrained burgundy calls to action. The existing cream background, borders, typography, and spacing system remain in use. The separate duplicate About card was removed, and the verified career summary now fills the previously empty left-side area.
 
-## Focused comparison
+## Focused checks
 
-The mobile comparison is the focused hero/navigation check. At `390 x 844`, the lockup, hamburger, title, affiliation, topic chips, actions, and portrait remain readable without horizontal overflow. The menu was also opened and closed successfully in the browser.
-
-## Required fidelity surfaces
-
-- Fonts and typography: The reference uses a serif display face; the implementation intentionally uses DM Sans for a more technical, contemporary profile. Hierarchy, line height, weights, wrapping, and small-label tracking remain consistent and readable.
-- Spacing and layout rhythm: Desktop hero columns align cleanly and the tightened hero now transitions to About within the next viewport. Mobile spacing is compact enough for the core identity and primary actions to appear before the portrait.
-- Colors and visual tokens: The deep reference purple is translated into a light lavender field, dark navy text, and focused violet accents. Contrast remains strong in both light and tested dark states.
-- Image quality and asset fidelity: The implementation uses the verified Xinfeng Li portrait already present in the profile source; its crop is sharp and consistent on desktop and mobile. No reference-site logo, portrait, or decorative asset was copied.
-- Copy and content: Biography, research directions, news, publications, affiliations, emails, and links are sourced from the supplied academic homepage and Google Scholar URL. Unverified citation metrics and missing publication links were not invented.
+- Branding: the supplied SPAIS Lab image renders proportionally in desktop and mobile navigation; a visible `SPAIS Lab@PolyU` affiliation line identifies the PolyU lab, and no `XL` monogram remains.
+- Home/About separation: Home carries the third-person career history. About carries only a restrained third-person research summary plus the existing verified service and award sections.
+- Publications: 51 cards render from the verified Google Scholar membership; existing richer metadata remains intact for matching records.
+- Publications resilience: page content is visible without waiting for JavaScript or `IntersectionObserver`; the former all-page transparency failure is covered by a source regression check.
+- Team: the roster uses the full content width and renders the five approved English names. Advising text appears only for Shunfa Zhao, Jiahe Chen, and Di Xu.
+- Openings: the top-level route renders the existing verified recruiting text and two email actions.
+- Responsive behavior: all tested pages reported `scrollWidth == innerWidth` at both `1280` and `390` CSS pixels. The mobile navigation opens and exposes all seven routes.
+- Runtime: no browser console errors were observed on Home, About, Publications, Team, or Openings.
 
 ## Comparison history
 
-1. Initial comparison found a P2 vertical-rhythm mismatch: the implementation hero left noticeably more empty space than the reference before the About section. The hero and section padding were reduced; the post-fix desktop capture shows a tighter transition while keeping the portrait card readable.
-2. Functional review found a P2 publication-list issue: source ordering could repeat year headings, and a filtered search left empty year labels visible. Publications are now sorted before grouping, and empty year headings are hidden during search. Browser verification with `AudioTrust` returned one card and only the `2026` heading.
+1. Initial build failed because the repository's Sass version interpreted CSS `min(13rem, 100%)` as incompatible arithmetic. Replaced it with equivalent `width` and `max-width` declarations.
+2. Initial About render exposed Markdown heading markers (`## About`) because this layout did not parse those headings as expected. Replaced the headings with explicit semantic HTML and recaptured the page.
+3. Desktop and mobile rechecks found no horizontal overflow, clipped navigation, or unresolved page-transition state.
+4. A user browser showed only the Publications navbar because `.fade-in-section` defaulted the entire page to `opacity: 0`. The page wrapper now defaults to visible, and the rebuilt local page renders all 51 cards immediately.
 
 ## Findings
 
-- No actionable P0, P1, or P2 issues remain.
-- Intentional adaptation: the implementation is not a pixel clone. Its light palette, sans-serif display type, card-based portrait, and CTA row distinguish the new profile while preserving the approved reference framework.
-
-## Primary interactions and runtime checks
-
-- Publication search: passed (`AudioTrust` yielded one matching publication and one visible year group).
-- Mobile hamburger menu: passed (expanded and collapsed state verified).
-- Dark-mode toggle: passed (`data-bs-theme="dark"` observed after click, then restored).
-- Browser console warnings/errors: none observed on the tested local pages.
-
-## Follow-up polish
-
-- P3: Citation totals can be added later only after an accessible, verifiable source is available.
-- P3: A supplied lab logo could replace the text-based `XL` monogram in a later branding pass.
+- No actionable P0, P1, or P2 visual issues remain.
+- The logo is intentionally scaled down from the supplied high-resolution source; its aspect ratio is preserved.
+- Scholar-only publication records retain Scholar's visible abbreviated author and venue strings instead of inventing fuller metadata.
 
 final result: passed

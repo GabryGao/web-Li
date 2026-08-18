@@ -1,0 +1,27 @@
+---
+title: "Openings"
+layout: gridlay
+sitemap: false
+permalink: /openings/
+---
+
+{% assign profile = site.data.profile %}
+
+<header class="page-hero page-hero-compact">
+  <p class="section-kicker">Join the lab</p>
+  <h1>Openings</h1>
+  <p>Opportunities at SPAIS Lab, The Hong Kong Polytechnic University.</p>
+</header>
+
+<section class="surface-card openings-card" aria-labelledby="openings-heading">
+  <p class="section-kicker">Open positions</p>
+  <h2 id="openings-heading">{{ profile.recruiting.headline }}</h2>
+  <p>{{ profile.recruiting.text }}</p>
+  <p class="openings-note">{{ profile.recruiting.note }}</p>
+  <div class="hero-actions openings-actions">
+    <a href="mailto:{{ site.email }}" class="action-link action-link-primary">{{ site.email }} <span aria-hidden="true">↗</span></a>
+    {% if site.links.email_alt and site.links.email_alt != "" %}
+    <a href="mailto:{{ site.links.email_alt }}" class="action-link">{{ site.links.email_alt }} <span aria-hidden="true">↗</span></a>
+    {% endif %}
+  </div>
+</section>

@@ -50,15 +50,10 @@ permalink: /team/
 </section>
 {% endif %}
 
-<section class="recruit-panel team-recruit-panel">
-  <div class="recruit-panel-copy">
+<section class="surface-card page-cta team-recruit-panel">
+  <div>
     <p class="section-kicker">Open positions</p>
-    <h2>{{ profile.recruiting.headline }}</h2>
-    <p>{{ profile.recruiting.text }}</p>
-    <small>{{ profile.recruiting.note }}</small>
+    <h2>Interested in joining SPAIS Lab?</h2>
   </div>
-  <div class="recruit-actions">
-    <a href="mailto:{{ site.email }}" class="action-link action-link-light">{{ site.email }} ↗</a>
-    <a href="mailto:{{ site.links.email_alt }}" class="action-link action-link-ghost">{{ site.links.email_alt }} ↗</a>
-  </div>
+  <a href="{{ '/openings/' | relative_url }}" class="action-link action-link-primary">View openings →</a>
 </section>

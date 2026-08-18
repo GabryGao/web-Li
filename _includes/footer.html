@@ -1,7 +1,7 @@
 <footer class="site-footer">
   <div class="footer-grid">
     <div class="footer-profile">
-      <div class="footer-brand"><span class="brand-mark">XL</span><strong>{{ site.name }}</strong></div>
+      <div class="footer-brand"><img class="footer-logo" src="{{ '/images/spais-lab.png' | relative_url }}" alt="SPAIS Lab@PolyU"></div>
       <p>{{ site.title }}<br>The Hong Kong Polytechnic University</p>
       {% if site.lab_tagline %}<p class="footer-tagline">{{ site.lab_tagline }}</p>{% endif %}
     </div>
@@ -20,7 +20,7 @@
         {% if site.links.google_scholar and site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}"><i class="ai ai-google-scholar"></i> Google Scholar</a><br>{% endif %}
         {% if site.links.researchgate and site.links.researchgate != "" %}<a href="{{ site.links.researchgate }}"><i class="ai ai-researchgate"></i> ResearchGate</a><br>{% endif %}
         <a href="{{ '/publications/' | relative_url }}"><i class="fa-solid fa-book"></i> Publications</a><br>
-        <a href="{{ '/team/' | relative_url }}"><i class="fa-solid fa-users"></i> Join the group</a>
+        <a href="{{ '/openings/' | relative_url }}"><i class="fa-solid fa-users"></i> Openings</a>
       </p>
     </div>
   </div>

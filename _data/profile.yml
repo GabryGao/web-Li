@@ -4,11 +4,15 @@ eyebrow: "AI Security & Trustworthy AI"
 tagline: "Trustworthy AI, LLM/Agentic AI Security, AI for Security."
 affiliation: "Department of Data Science and Artificial Intelligence, The Hong Kong Polytechnic University"
 
-bio:
-  - "I am an Assistant Professor in the Department of Data Science and Artificial Intelligence (DSAI) at The Hong Kong Polytechnic University (PolyU)."
-  - "Previously, I was a Research Fellow in the College of Computing and Data Science at NTU, working with Prof. XiaoFeng Wang and Prof. Wei Dong. I completed my Ph.D. with honors at Zhejiang University, co-supervised by Prof. Wenyuan Xu, Prof. Xiaoyu Ji, and Prof. Chen Yan. I obtained my B.Eng. with honors from Zhejiang University."
-  - "My research focuses on AI security and privacy, especially the security, privacy, and safety of multimodal LLMs & agentic AI systems. I study how to secure interactions between agentic AI systems and the real world. My goal is to help AI agents become robust and responsible partners. Robust agents should be resilient to external attacks, and responsible agents should behave in a helpful, harmless, and honest manner."
-  - "My work has appeared in security and AI/ML venues: IEEE S&P, ACM CCS, USENIX Security, NDSS, NeurIPS, ICML, ICLR, KDD, CVPR, ACL, etc."
+career:
+  - "Dr. Xinfeng Li is a tenure-track Assistant Professor in the Department of Data Science and Artificial Intelligence at The Hong Kong Polytechnic University."
+  - "Before joining PolyU, he was a Research Fellow in the College of Computing and Data Science at Nanyang Technological University, working with Prof. XiaoFeng Wang and Prof. Wei Dong."
+  - "He received his Ph.D. and B.Eng. degrees from Zhejiang University. His doctoral research was co-supervised by Prof. Wenyuan Xu, Prof. Xiaoyu Ji, and Prof. Chen Yan."
+
+about:
+  - "Dr. Li studies security and privacy in artificial intelligence, with a particular focus on multimodal large language models and agentic AI systems."
+  - "His research examines how AI systems interact with people, software, and the physical world, and how those interactions can be made more robust, responsible, and trustworthy."
+  - "Current directions include agentic AI security, responsible AI in social contexts, and trustworthy AI applications in areas such as healthcare, power grids, software engineering, IoT, and telecommunications."
 
 research:
   - id: "agentic-ai-security"

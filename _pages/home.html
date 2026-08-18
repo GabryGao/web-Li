@@ -18,6 +18,12 @@ permalink: /
       <p class="hero-affiliation">{{ profile.affiliation }}</p>
       <p class="hero-lead">{{ profile.tagline }}</p>
 
+      <div class="hero-career" aria-label="Academic background">
+        {% for paragraph in profile.career %}
+        <p>{{ paragraph }}</p>
+        {% endfor %}
+      </div>
+
       <div class="hero-topic-row" aria-label="Research topics">
         {% for direction in profile.research %}
         <a class="tag-chip" href="#{{ direction.id }}">{{ direction.short_title }}</a>
@@ -25,7 +31,7 @@ permalink: /
       </div>
 
       <div class="hero-actions">
-        <a href="#openings" class="action-link action-link-primary">Join Us <span aria-hidden="true">↗</span></a>
+        <a href="{{ '/openings/' | relative_url }}" class="action-link action-link-primary">Join Us <span aria-hidden="true">↗</span></a>
         <a href="{{ '/publications/' | relative_url }}" class="action-link">Publications <span aria-hidden="true">→</span></a>
         <a href="mailto:{{ site.email }}" class="action-link">Email <span aria-hidden="true">→</span></a>
       </div>
@@ -34,21 +40,6 @@ permalink: /
     <aside class="site-hero-profile" aria-label="Profile">
       {% include sidebar.html %}
     </aside>
-  </div>
-</section>
-
-<section class="home-section" id="about" aria-labelledby="about-title">
-  <div class="section-heading">
-    <p class="section-kicker">Profile</p>
-    <h2 id="about-title">About</h2>
-  </div>
-  <div class="surface-card about-card">
-    <div class="about-accent" aria-hidden="true">XL</div>
-    <div class="about-copy">
-      {% for paragraph in profile.bio %}
-      <p>{{ paragraph }}</p>
-      {% endfor %}
-    </div>
   </div>
 </section>
 
@@ -119,19 +110,12 @@ permalink: /
   </div>
 </section>
 
-<section class="home-section" id="openings" aria-labelledby="openings-title">
-  <div class="recruit-panel">
-    <div class="recruit-panel-copy">
+<section class="home-section" aria-labelledby="openings-title">
+  <div class="surface-card page-cta">
+    <div>
       <p class="section-kicker">Open positions</p>
-      <h2 id="openings-title">{{ profile.recruiting.headline }}</h2>
-      <p>{{ profile.recruiting.text }}</p>
-      <small>{{ profile.recruiting.note }}</small>
+      <h2 id="openings-title">Interested in joining SPAIS Lab?</h2>
     </div>
-    <div class="recruit-actions">
-      <a href="mailto:{{ site.email }}" class="action-link action-link-light">{{ site.email }} <span aria-hidden="true">↗</span></a>
-      {% if site.links.email_alt and site.links.email_alt != "" %}
-      <a href="mailto:{{ site.links.email_alt }}" class="action-link action-link-ghost">{{ site.links.email_alt }} <span aria-hidden="true">↗</span></a>
-      {% endif %}
-    </div>
+    <a href="{{ '/openings/' | relative_url }}" class="action-link action-link-primary">View openings <span aria-hidden="true">→</span></a>
   </div>
 </section>
