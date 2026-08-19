@@ -123,13 +123,13 @@
 - title: A Vision for Access Control in LLM-based Agent Systems
   authors: Xinfeng Li, Dong Huang, Jie Li, Hongyi Cai, Zhenhong Zhou, Wei Dong, XiaoFeng Wang, Yang Liu
   venue: arXiv
-  year: "2025"
+  year: 2025
   url: "https://arxiv.org/abs/2510.11108"
 
 - title: "MedSentry: Understanding and Mitigating Safety Risks in Medical LLM Multi-Agent Systems"
   authors: Kai Chen, Taihang Zhen, Hewei Wang, Kailai Liu, Xinfeng Li^, Jing Huo, Tianpei Yang, Jinfeng Xu, Wei Dong, Yang Gao
   venue: arXiv
-  year: "2025"
+  year: 2025
   url: "https://arxiv.org/abs/2505.20824"
 
 - title: "The Eye of Sherlock Holmes: Uncovering User Private Attribute Profiling via Vision-Language Model Agentic Framework"

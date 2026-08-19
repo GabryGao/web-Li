@@ -8,24 +8,29 @@ permalink: /publications/
 <header class="page-hero page-hero-compact">
   <p class="section-kicker">Research output</p>
   <h1>Publications</h1>
-  <p>Selected research listed on the source academic homepage. (*: Equal Contribution, ^: Corresponding Author)</p>
+  <p>Selected research. (*: Equal Contribution, ^: Corresponding Author)</p>
 </header>
 
-<div class="publication-toolbar">
-  <label class="visually-hidden" for="pubSearch">Filter publications</label>
-  <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-  <input type="search" class="pub-search" id="pubSearch" placeholder="Search title, author, venue, or year…">
-</div>
-
-<div class="publication-list" id="pubList">
-{% assign sorted_publications = site.data.publications | sort: "year" | reverse %}
-{% assign current_year = "" %}
-{% for pub in sorted_publications %}
-  {% capture pub_year %}{{ pub.year }}{% endcapture %}
-  {% if pub_year != current_year %}
-    <h2 class="publication-year">{{ pub_year }}</h2>
-    {% assign current_year = pub_year %}
-  {% endif %}
-  {% include publication-card.html pub=pub %}
+{% assign publication_years = site.data.publications | map: "year" | uniq | sort | reverse %}
+{% for year in publication_years %}
+  <h2 class="publication-year">{{ year }}</h2>
+  <ul class="publication-list">
+  {% for pub in site.data.publications %}
+    {% if pub.year == year %}
+      <li class="publication-item">
+        <span class="publication-authors">{{ pub.authors }}.</span>
+        “{% if pub.url %}<a class="publication-title-link" href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}<span class="publication-title">{{ pub.title }}</span>{% endif %}.”
+        {% if pub.venue %}<span>In <em class="publication-venue">{{ pub.venue }}</em>.</span>{% endif %}
+        {% if pub.website or pub.code or pub.dataset or pub.weights %}
+          <span class="publication-links">
+            {% if pub.website %}[<a href="{{ pub.website }}" target="_blank" rel="noopener">Website</a>]{% endif %}
+            {% if pub.code %}[<a href="{{ pub.code }}" target="_blank" rel="noopener">Code</a>]{% endif %}
+            {% if pub.dataset %}[<a href="{{ pub.dataset }}" target="_blank" rel="noopener">Dataset</a>]{% endif %}
+            {% if pub.weights %}[<a href="{{ pub.weights }}" target="_blank" rel="noopener">Weights</a>]{% endif %}
+          </span>
+        {% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
 {% endfor %}
-</div>
