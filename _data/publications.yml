@@ -56,7 +56,7 @@
   url: "https://letterligo.netlify.app/paper/KDD26_EmoRAG.pdf"
 
 - title: "AudioTrust: Benchmarking the Multifaceted Trustworthiness of Audio Large Language Models"
-  authors: K. Li, C. Shen, Y. Liu, J. Han, K. Zheng, X. Zou, Z. Wang, S. Zhang, X. Du, H. Luo, Y. Jin, X. Xing, Z. Ma, Y. Liu, Y. Zhang, J. Fang, K. Wang, Y. Yan, G. Deng, H. Li, Y. Li, X. Zhuang, T. Chen, Q. Wen, T. Zhang, Y. Liu, H. Hu, Z. Wu, X. Hu, E. Chng, W. Xu, X. Wang, W. Dong, Xinfeng Li^
+  authors: Kai Li, Can Shen, Yile Liu, Jirui Han, Kelong Zheng, Xuechao Zou, Lionel Z. Wang, Shun Zhang, Xingjian Du, Hanjun Luo, Yingbin Jin, Xinxin Xing, Ziyang Ma, Yue Liu, Yifan Zhang, Junfeng Fang, Kun Wang, Yibo Yan, Gelei Deng, Haoyang Li, Yiming Li, Xiaobin Zhuang, Tianlong Chen, Qingsong Wen, Tianwei Zhang, Yang Liu, Haibo Hu, Zhizheng Wu, Xiaolin Hu, Eng-Siong Chng, Wenyuan Xu, XiaoFeng Wang, Wei Dong, Xinfeng Li^
   venue: ICLR 2026
   year: 2026
   url: "https://arxiv.org/abs/2505.16211"
@@ -220,8 +220,7 @@
   url: "https://www.ndss-symposium.org/ndss-paper/eararray-defending-against-dolphinattack-via-acoustic-attenuation/"
 
 # Additional records present on the verified Google Scholar profile on 2026-08-18.
-# Author names are expanded from the linked paper or publisher record, except
-# AudioTrust, whose abbreviated author line is intentionally retained.
+# Author names are expanded from the linked paper or publisher record.
 - title: "Advances and Challenges in Foundation Agents: From Brain-Inspired Intelligence to Evolutionary, Collaborative, and Safe Systems"
   authors: "Bang Liu*, Xinfeng Li*, Jiayi Zhang*, Jinlin Wang*, Tanjin He*, Sirui Hong*, Hongzhang Liu*, Shaokun Zhang*, Kaitao Song, Kunlun Zhu, Yuheng Cheng, Suyuchen Wang, Xiaoqiang Wang, Yuyu Luo, Haibo Jin, Peiyan Zhang, Ollie Liu, Jiaqi Chen, Huan Zhang, Zhaoyang Yu, Haochen Shi, Boyan Li, Dekun Wu, Fengwei Teng, Xiaojun Jia, Jiawei Xu, Jinyu Xiang, Yizhang Lin, Tianming Liu, Tongliang Liu, Yu Su, Huan Sun, Glen Berseth, Jianyun Nie, Ian Foster, Logan Ward, Qingyun Wu, Yu Gu, Mingchen Zhuge, Xiangru Tang, Haohan Wang, Jiaxuan You, Chi Wang, Jian Pei, Qiang Yang, Xiaoliang Qi, Chenglin Wu"
   venue: "arXiv preprint arXiv:2504.01990, 2025"
