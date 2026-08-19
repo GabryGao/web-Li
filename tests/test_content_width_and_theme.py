@@ -39,11 +39,14 @@ class ContentWidthAndThemeTest(unittest.TestCase):
         )
         self.assertNotIn("prefers-color-scheme: dark", head)
 
-    def test_favicon_uses_the_spais_lab_logo(self):
+    def test_favicon_uses_the_square_spais_logo_with_cache_busting(self):
         head = (REPOSITORY_ROOT / "_includes" / "head.html").read_text()
 
-        self.assertIn("/images/spais-lab.png", head)
+        self.assertIn("/images/spais-logo.png", head)
+        self.assertIn("?v=20260820", head)
         self.assertIn('rel="apple-touch-icon"', head)
+        self.assertTrue((REPOSITORY_ROOT / "images" / "spais-logo.png").is_file())
+        self.assertNotIn("/images/spais-lab.png", head)
         self.assertNotIn("/favicon.svg", head)
 
     def test_publication_rows_use_the_full_content_width(self):
@@ -75,7 +78,7 @@ class ContentWidthAndThemeTest(unittest.TestCase):
         self.assertNotIn("#0000ee", stylesheet)
         self.assertNotIn("#0000b8", stylesheet)
 
-    def test_about_profile_uses_available_width_on_large_screens(self):
+    def test_about_profile_stacks_its_three_paragraphs_vertically(self):
         html = (REPOSITORY_ROOT / "_pages" / "about.html").read_text()
         stylesheet = (
             REPOSITORY_ROOT / "_sass" / "layouts" / "_home.scss"
@@ -83,8 +86,12 @@ class ContentWidthAndThemeTest(unittest.TestCase):
 
         self.assertIn('class="section-card about-profile-card"', html)
         self.assertIn(
-            "grid-template-columns: repeat(3, minmax(0, 1fr))",
+            "grid-template-columns: 1fr",
             rule_for(stylesheet, ".about-profile-card"),
+        )
+        self.assertIn(
+            "margin-bottom: var(--space-5)",
+            rule_for(stylesheet, ".about-profile-card p"),
         )
         self.assertIn(
             "max-width: none", rule_for(stylesheet, ".about-profile-card p")
