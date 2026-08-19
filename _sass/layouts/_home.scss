@@ -213,6 +213,19 @@
 .page-hero p:last-child { margin: var(--space-5, 1.25rem) 0 0; font-size: 1.03rem; }
 .page-hero-compact { padding-bottom: var(--space-10); }
 
+.about-profile-card {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.5rem, 3vw, 3rem);
+  align-items: start;
+}
+
+.about-profile-card p {
+  margin: 0;
+  max-width: none;
+  color: var(--text-secondary);
+}
+
 .page-cta {
   display: flex;
   justify-content: space-between;
@@ -241,6 +254,7 @@
   .site-hero-profile { max-width: 28rem; }
   .recruit-panel { grid-template-columns: 1fr; }
   .recruit-actions { margin-top: 0; align-items: flex-start; }
+  .about-profile-card { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {

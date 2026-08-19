@@ -220,99 +220,100 @@
   url: "https://www.ndss-symposium.org/ndss-paper/eararray-defending-against-dolphinattack-via-acoustic-attenuation/"
 
 # Additional records present on the verified Google Scholar profile on 2026-08-18.
-# Author and venue strings below intentionally preserve Scholar's visible abbreviations.
+# Author names are expanded from the linked paper or publisher record, except
+# AudioTrust, whose abbreviated author line is intentionally retained.
 - title: "Advances and Challenges in Foundation Agents: From Brain-Inspired Intelligence to Evolutionary, Collaborative, and Safe Systems"
-  authors: "B Liu*, X Li*, J Zhang*, J Wang*, T He*, S Hong*, H Liu*, S Zhang*, ..."
+  authors: "Bang Liu*, Xinfeng Li*, Jiayi Zhang*, Jinlin Wang*, Tanjin He*, Sirui Hong*, Hongzhang Liu*, Shaokun Zhang*, Kaitao Song, Kunlun Zhu, Yuheng Cheng, Suyuchen Wang, Xiaoqiang Wang, Yuyu Luo, Haibo Jin, Peiyan Zhang, Ollie Liu, Jiaqi Chen, Huan Zhang, Zhaoyang Yu, Haochen Shi, Boyan Li, Dekun Wu, Fengwei Teng, Xiaojun Jia, Jiawei Xu, Jinyu Xiang, Yizhang Lin, Tianming Liu, Tongliang Liu, Yu Su, Huan Sun, Glen Berseth, Jianyun Nie, Ian Foster, Logan Ward, Qingyun Wu, Yu Gu, Mingchen Zhuge, Xiangru Tang, Haohan Wang, Jiaxuan You, Chi Wang, Jian Pei, Qiang Yang, Xiaoliang Qi, Chenglin Wu"
   venue: "arXiv preprint arXiv:2504.01990, 2025"
   year: 2025
   url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JC_UWyoAAAAJ&pagesize=100&citation_for_view=JC_UWyoAAAAJ:Tiz5es2fbqcC"
 
 - title: "A comprehensive survey in llm (-agent) full stack safety: Data, training and deployment"
-  authors: "K Wang, G Zhang, Z Zhou, J Wu, M Yu, S Zhao, C Yin, J Fu, Y Yan, H Luo, ..."
+  authors: "Kun Wang, Guibin Zhang, Zhenhong Zhou, Jiahao Wu, Miao Yu, Shiqian Zhao, Chenlong Yin, Jinhu Fu, Yibo Yan, Hanjun Luo, Liang Lin, Zhihao Xu, Haolang Lu, Xinye Cao, Xinyun Zhou, Weifei Jin, Fanci Meng, Junyuan Mao, Hao Wu, Minghe Wang, Fan Zhang, Junfeng Fang, Chengwei Liu, Yifan Zhang, Qiankun Li, Chongye Guo, Yalan Qin, Yi Ding, Donghai Hong, Jiaming Ji, Xinfeng Li, Yifan Jiang, Dongxia Wang, Yihao Huang, Yufei Guo, Jen-tse Huang, Yanwei Yue, Wenke Huang, Guancheng Wan, Tianlin Li, Lei Bai, Jie Zhang, Qing Guo, Jingyi Wang, Tianlong Chen, Joey Tianyi Zhou, Xiaojun Jia, Weisong Sun, Cong Wu, Jing Chen, Xuming Hu, Yiming Li, Xiao Wang, Ningyu Zhang, Luu Anh Tuan, Guowen Xu, Tianwei Zhang, Xingjun Ma, Xiang Wang, Bo An, Jun Sun, Mohit Bansal, Shirui Pan, Yuval Elovici, Bhavya Kailkhura, Bo Li, Yaodong Yang, Hongwei Li, Wenyuan Xu, Yizhou Sun, Wei Wang, Qing Li, Ke Tang, Yu-Gang Jiang, Felix Juefei-Xu, Hui Xiong, Xiaofeng Wang, Shuicheng Yan, Dacheng Tao, Philip S. Yu, Qingsong Wen, Yang Liu"
   venue: "arXiv preprint arXiv:2504.15585, 2025"
   year: 2025
   url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JC_UWyoAAAAJ&pagesize=100&citation_for_view=JC_UWyoAAAAJ:isC4tDSrTZIC"
 
 - title: "MMAR: A Challenging Benchmark for Deep Reasoning in Speech, Audio, Music, and Their Mix"
-  authors: "Z Ma, Y Ma, Y Zhu, C Yang, YW Chao, R Xu, W Chen, Y Chen, Z Chen, ..."
+  authors: "Ziyang Ma, Yinghao Ma, Yanqiao Zhu, Chen Yang, Yi-Wen Chao, Ruiyang Xu, Wenxi Chen, Yuanzhe Chen, Zhuo Chen, Jian Cong, Kai Li, Keliang Li, Siyou Li, Xinfeng Li, Xiquan Li, Zheng Lian, Yuzhe Liang, Minghao Liu, Zhikang Niu, Tianrui Wang, Yuping Wang, Yuxuan Wang, Yihao Wu, Guanrou Yang, Jianwei Yu, Ruibin Yuan, Zhisheng Zheng, Ziya Zhou, Haina Zhu, Wei Xue, Emmanouil Benetos, Kai Yu, Eng-Siong Chng, Xie Chen"
   venue: "arXiv preprint arXiv:2505.13032, 2025"
   year: 2025
   url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JC_UWyoAAAAJ&pagesize=100&citation_for_view=JC_UWyoAAAAJ:xtRiw3GOFMkC"
 
 - title: "Safety in large reasoning models: A survey"
-  authors: "C Wang, Y Liu, B Bi, D Zhang, ZZ Li, Y Ma, Y He, S Yu, X Li, J Fang, ..."
+  authors: "Cheng Wang, Yue Liu, Baolong Bi, Duzhen Zhang, Zhong-Zhi Li, Yingwei Ma, Yufei He, Shengju Yu, Xinfeng Li, Junfeng Fang, Jiaheng Zhang, Bryan Hooi"
   venue: "EMNLP 2025, 2025"
   year: 2025
   url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JC_UWyoAAAAJ&pagesize=100&citation_for_view=JC_UWyoAAAAJ:BqipwSGYUEgC"
 
 - title: "MDTeamGPT: Mitigating Context Collapse and Enabling Self-Evolution in Medical Multi-Agent Reasoning"
-  authors: "K Chen, X Li, T Yang, H Wang, G Yang, J Huo, Y Gao"
+  authors: "Kai Chen, Xinfeng Li, Tianpei Yang, Hewei Wang, Guang Yang, Jing Huo, Yang Gao"
   venue: "Findings of the Association for Computational Linguistics (ACL), 28578-28606, 2026"
   year: 2026
   url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JC_UWyoAAAAJ&pagesize=100&citation_for_view=JC_UWyoAAAAJ:anf4URPfarAC"
 
 - title: "Guardreasoner-vl: Safeguarding vlms via reinforced reasoning"
-  authors: "Y Liu, S Zhai, M Du, Y Chen, T Cao, H Gao, C Wang, X Li, K Wang, J Fang, ..."
+  authors: "Yue Liu, Shengfang Zhai, Mingzhe Du, Yulin Chen, Tri Cao, Hongcheng Gao, Cheng Wang, Xinfeng Li, Kun Wang, Junfeng Fang, Jiaheng Zhang, Bryan Hooi"
   venue: "NeurIPS 2025, 2025"
   year: 2025
   url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JC_UWyoAAAAJ&pagesize=100&citation_for_view=JC_UWyoAAAAJ:ns9cj8rnVeAC"
 
 - title: "Adversarial attacks against closed-source mllms via feature optimal alignment"
-  authors: "X Jia, S Gao, S Qin, T Pang, C Du, Y Huang, X Li, Y Li, B Li, Y Liu"
+  authors: "Xiaojun Jia, Sensen Gao, Simeng Qin, Tianyu Pang, Chao Du, Yihao Huang, Xinfeng Li, Yiming Li, Bo Li, Yang Liu"
   venue: "Advances in Neural Information Processing Systems 38, 57993-58028, 2025"
   year: 2025
   url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JC_UWyoAAAAJ&pagesize=100&citation_for_view=JC_UWyoAAAAJ:GtLg2Ama23sC"
 
 - title: "Heuristic-induced multimodal risk distribution jailbreak attack for multimodal large language models"
-  authors: "T Ma, X Jia, R Duan, X Li, Y Huang, X Jia, Z Chu, W Ren"
+  authors: "Teng Ma, Xiaojun Jia, Ranjie Duan, Xinfeng Li, Yihao Huang, Xiaoshuang Jia, Zhixuan Chu, Wenqi Ren"
   venue: "Proceedings of the IEEE/CVF International Conference on Computer Vision …, 2025"
   year: 2025
   url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JC_UWyoAAAAJ&pagesize=100&citation_for_view=JC_UWyoAAAAJ:OU6Ihb5iCvQC"
 
 - title: "POEX: Understanding and Mitigating Policy Executable Jailbreak Attacks against Embodied AI"
-  authors: "X Lu, Z Huang, X Li, X Ji, W Xu"
+  authors: "Xuancun Lu, Zhengxian Huang, Xinfeng Li, Xiaoyu Ji, Wenyuan Xu"
   venue: "arXiv preprint arXiv:2412.16633, 2024"
   year: 2024
   url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JC_UWyoAAAAJ&pagesize=100&citation_for_view=JC_UWyoAAAAJ:zA6iFVUQeVQC"
 
 - title: "Raglab: A modular and research-oriented unified framework for retrieval-augmented generation"
-  authors: "X Zhang, YZ Song, Y Wang, S Tang, X Li, Z Zeng, Z Wu, W Ye, W Xu, ..."
+  authors: "Xuanwang Zhang, Yun-Ze Song, Yidong Wang, Shuyun Tang, Xinfeng Li, Zhengran Zeng, Zhen Wu, Wei Ye, Wenyuan Xu, Yue Zhang, Xinyu Dai, Shikun Zhang, Qingsong Wen"
   venue: "Proceedings of the 2024 Conference on Empirical Methods in Natural Language …, 2024"
   year: 2024
   url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JC_UWyoAAAAJ&pagesize=100&citation_for_view=JC_UWyoAAAAJ:ZeXyd9-uunAC"
 
 - title: "The Landscape of Prompt Injection Threats in LLM Agents: From Taxonomy to Analysis"
-  authors: "P Wang, X Li, C Xiang, J Zhang, Y Li, L Zhang, X Wang, Y Tian"
+  authors: "Peiran Wang, Xinfeng Li, Chong Xiang, Jinghuai Zhang, Ying Li, Lixia Zhang, Xiaofeng Wang, Yuan Tian"
   venue: "arXiv preprint arXiv:2602.10453, 2026"
   year: 2026
   url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JC_UWyoAAAAJ&pagesize=100&citation_for_view=JC_UWyoAAAAJ:NXb4pA-qfm4C"
 
 - title: "Bigbench: A unified benchmark for social bias in text-to-image generative models based on multi-modal llm"
-  authors: "H Luo, H Huang, Z Deng, X Li, H Wang, Y Jin, Y Liu, W Xu, Z Liu"
+  authors: "Hanjun Luo, Haoyu Huang, Ziye Deng, Xuecheng Liu, Ruizhe Chen, Zuozhu Liu"
   venue: "arXiv preprint arXiv:2407.15240, 2024"
   year: 2024
   url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JC_UWyoAAAAJ&pagesize=100&citation_for_view=JC_UWyoAAAAJ:HDshCWvjkbEC"
 
 - title: "UltraBD: Backdoor Attack against Automatic Speaker Verification Systems via Adversarial Ultrasound"
-  authors: "J Ze, X Li, Y Cheng, X Ji, W Xu"
+  authors: "Junning Ze, Xinfeng Li, Yushi Cheng, Xiaoyu Ji, Wenyuan Xu"
   venue: "2022 IEEE 28th International Conference on Parallel and Distributed Systems …, 2023"
   year: 2023
   url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JC_UWyoAAAAJ&pagesize=100&citation_for_view=JC_UWyoAAAAJ:ufrVoPGSRksC"
 
 - title: "When Memory Becomes a Vulnerability: Towards Multi-turn Jailbreak Attacks against Text-to-Image Generation Systems"
-  authors: "S Zhao, J Liu, Y Li, R Hu, X Jia, W Fan, X Li, J Zhang, W Dong, T Zhang, ..."
+  authors: "Shiqian Zhao, Jiayang Liu, Yiming Li, Runyi Hu, Xiaojun Jia, Wenshu Fan, Xiaobao Wu, Xinfeng Li, Jie Zhang, Wei Dong, Tianwei Zhang, Luu Anh Tuan"
   venue: "USENIX Security Symposium, 2026"
   year: 2026
   url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JC_UWyoAAAAJ&pagesize=100&citation_for_view=JC_UWyoAAAAJ:Ug5p-4gJ2f0C"
 
 - title: "Customization under Fire: Plugin Poisoning in Text-to-Image Ecosystem"
-  authors: "J Chen, X He, Y Yang, X Li, C Zhou, J Li, Z Ma, T Du, S Ji"
+  authors: "Jiahao Chen, Xing He, Yong Yang, Xinfeng Li, Chunyi Zhou, Junhao Li, Zhe Ma, Tianyu Du, Shouling Ji"
   venue: "Proceedings of the 2026 on ACM SIGSAC Conference on Computer and …, 2026"
   year: 2026
   url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JC_UWyoAAAAJ&pagesize=100&citation_for_view=JC_UWyoAAAAJ:HtEfBTGE9r8C"
 
 - title: "AudioStealer: Extracting Audio Prompts via Shapley Value-Guided Query Search"
-  authors: "Y Jin, X Du, H Luo, Z Wang, H Hu, X Wang, X Li"
+  authors: "Yingbin Jin, Xingjian Du, Hanjun Luo, Zihao Wang, Haibo Hu, XiaoFeng Wang, Xinfeng Li"
   venue: "Findings of the Association for Computational Linguistics (ACL), 14052-14067, 2026"
   year: 2026
   url: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=JC_UWyoAAAAJ&pagesize=100&citation_for_view=JC_UWyoAAAAJ:FAceZFleit8C"

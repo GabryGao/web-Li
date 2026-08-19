@@ -19,9 +19,9 @@ publications = load_yaml("_data/publications.yml")
 
 expected_students = {
   "Tengchao Yang" => nil,
-  "Shunfa Zhao" => "Co-advised with Prof. Zhiwen Pan, University of Macau",
-  "Jiahe Chen" => "Co-advised with Prof. Lansheng Han, Huazhong University of Science and Technology",
-  "Di Xu" => "Co-advised with Prof. Lansheng Han, Huazhong University of Science and Technology",
+  "Shunfa Zhao" => "Co-advised with Prof. Chi Man Pun@U Macau",
+  "Jiahe Chen" => "Co-advised with Prof. Lansheng Han@HUST",
+  "Di Xu" => "Co-advised with Prof. Lansheng Han@HUST",
   "Can Shen" => nil
 }
 

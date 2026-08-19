@@ -67,7 +67,7 @@ render_expectations = {
   ],
   "_site/publications/index.html" => [
     "publication-year",
-    "publication-card"
+    "publication-item"
   ],
   "_site/research/index.html" => [
     "agentic-ai-security",
