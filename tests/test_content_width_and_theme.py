@@ -97,6 +97,18 @@ class ContentWidthAndThemeTest(unittest.TestCase):
             "max-width: none", rule_for(stylesheet, ".about-profile-card p")
         )
 
+    def test_professional_services_intro_uses_the_full_card_width(self):
+        html = (REPOSITORY_ROOT / "_pages" / "about.html").read_text()
+        stylesheet = (
+            REPOSITORY_ROOT / "_sass" / "layouts" / "_home.scss"
+        ).read_text()
+
+        self.assertIn('class="section-card professional-services-card"', html)
+        self.assertIn(
+            "max-width: none",
+            rule_for(stylesheet, ".professional-services-card > p:first-child"),
+        )
+
     def test_selected_work_is_a_two_column_plain_text_list(self):
         stylesheet = (
             REPOSITORY_ROOT / "_sass" / "components" / "_publication.scss"

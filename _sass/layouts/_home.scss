@@ -229,6 +229,8 @@
 
 .about-profile-card p:last-child { margin-bottom: 0; }
 
+.professional-services-card > p:first-child { max-width: none; }
+
 .page-cta {
   display: flex;
   justify-content: space-between;
