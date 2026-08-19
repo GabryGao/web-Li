@@ -45,6 +45,8 @@
 .research-body { display: flex; flex-direction: column; padding: 0; }
 .research-title { margin: var(--space-6) 0 var(--space-3); font-size: 1.08rem; }
 .research-desc { margin: 0; max-width: none; color: var(--text-secondary); font-size: 0.88rem; line-height: 1.62; }
+.research-page-hero h1 { max-width: none; }
+.research-page-hero p:last-child { max-width: none; }
 .research-page-grid { margin-bottom: var(--space-8); }
 .research-card-large { min-height: 0; }
 
