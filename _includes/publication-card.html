@@ -2,7 +2,6 @@
 <article class="publication-card" data-pub-searchable>
   <div class="publication-card-topline">
     <span class="publication-year-label">{{ pub.year }}</span>
-    <span class="publication-venue">{{ pub.venue }}</span>
   </div>
   <h3 class="publication-title">
     {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
