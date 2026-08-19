@@ -4,6 +4,7 @@
     {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
   </h3>
   <p class="publication-authors">{{ pub.authors }}</p>
+  {% if pub.venue %}<p class="publication-venue">{{ pub.venue }}</p>{% endif %}
   {% if pub.url or pub.website or pub.code or pub.dataset or pub.weights %}
   <div class="publication-actions" aria-label="Resources for {{ pub.title }}">
     {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">Paper ↗</a>{% endif %}
